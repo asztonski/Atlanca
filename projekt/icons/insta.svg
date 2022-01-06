@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <g id="insta" transform="translate(-1623 -50)">
+    <g id="Elipsa_6" data-name="Elipsa 6" transform="translate(1631.91 59.19)" fill="none" stroke="#fff" stroke-width="2">
+      <ellipse cx="6.67" cy="6.62" rx="6.67" ry="6.62" stroke="none"/>
+      <ellipse cx="6.67" cy="6.62" rx="5.67" ry="5.62" fill="none"/>
+    </g>
+    <ellipse id="Elipsa_7" data-name="Elipsa 7" cx="1.59" cy="1.61" rx="1.59" ry="1.61" transform="translate(1645.25 56.53)" fill="#fff"/>
+    <g id="Prostokąt_zaokrąglony_9" data-name="Prostokąt zaokrąglony 9" transform="translate(1623 50)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="31" height="31" rx="12" stroke="none"/>
+      <rect x="0.5" y="0.5" width="30" height="30" rx="11.5" fill="none"/>
+    </g>
+  </g>
+</svg>

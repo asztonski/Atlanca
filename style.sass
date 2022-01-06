@@ -1,0 +1,813 @@
+/* Fonts
+
+h1, .menuNav.mobile a
+  font-family: 'Playfair Display', serif
+  letter-spacing: 3px
+
+h2, h3, h4, p, a, select, button
+  font-family: 'Source Sans Pro', sans-serif
+
+h2, h3
+  font-weight: 300
+
+a
+  cursor: pointer
+  font-weight: bold
+
+select
+  font-weight: bold
+
+button
+  font-weight: normal
+
+/* General
+
+html, body
+  margin: 0
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+.global
+  transition: .36s ease
+  transform: translateY(0)
+  opacity: 0
+  pointer-events: none
+
+
+.loaded .global
+  opacity: 1
+  pointer-events: auto
+
+
+.loader
+  width: 100vw
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  background-color: white
+  transition: .36s ease
+  & div
+    position: absolute
+    display: flex
+    justify-content: center
+    & svg.dot-1, svg.dot-2, svg.dot-3
+      position: absolute
+  & div.container
+    height: max-content
+    align-self: flex-end
+    position: relative
+  & img.boat
+    position: absolute
+    align-self: center
+    animation: boatDesktop 2s infinite
+  & img.water
+    height: max-content
+    align-self: flex-end
+    animation: water 5s infinite
+    animation-timing-function: linear
+
+
+.loader.loaded
+  opacity: 0
+  pointer-events: none
+
+    
+    
+
+header
+  color: white
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  transition: 1s ease
+  transition-delay: .34s
+  position: relative
+
+  &.active
+    opacity: 1
+
+h4
+  font-style: italic
+
+a
+  color: white
+  text-decoration: none
+
+p
+  color: #DDDDDD
+  line-height: 2.85vh
+  margin: 0
+
+a, button
+  z-index: 3
+
+Button:focus
+  outline: none
+
+.bold
+  font-weight: bold
+  color: white
+
+\::-webkit-scrollbar
+  display: none
+
+header, section
+  display: flex
+  flex-direction: column
+
+.buttons
+  display: flex
+  flex-direction: row
+
+  button
+    transition: .34s ease
+
+.offer button
+  transition: .34s ease
+
+header button, section button
+  background: transparent
+  align-items: center
+  cursor: pointer
+  display: flex
+  border-radius: 30px
+
+header .buttons button:first-of-type:hover
+  background-color: #C10021
+  border-color: #C10021
+  color: white
+
+section .buttons button, a.red button
+  background-color: #C10021
+  color: white
+  border: none
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  overflow: hidden
+  -webkit-transition-duration: 0.5s
+  transition-duration: 0.5s
+  -webkit-transition-property: color, background-color
+  transition-property: color, background-color
+
+section .buttons a button:not(a.red button)
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  overflow: hidden
+  -webkit-transition-duration: 0.5s
+  transition-duration: 0.5s
+  -webkit-transition-property: color, background-color
+  transition-property: color, background-color
+
+@-webkit-keyframes hvr-back-pulse
+  50%
+    background-color: rgba(193, 0, 33, 0.65)
+
+@keyframes hvr-back-pulse
+  50%
+    background-color: rgba(193, 0, 33, 0.65)
+
+@-webkit-keyframes hvr-back-pulse-black
+  50%
+    background-color: rgba(0, 0, 0, 0.65)
+
+@keyframes hvr-back-pulse-black
+  50%
+    background-color: rgba(0, 0, 0, 0.65)
+
+@-webkit-keyframes hvr-back-pulse-blank
+  50%
+    opacity: .65
+
+@keyframes hvr-back-pulse-blank
+  50%
+    opacity: .65
+
+.social:hover
+  -webkit-animation-name: hvr-back-pulse-blank
+  animation-name: hvr-back-pulse-blank
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-delay: 0.5s
+  animation-delay: 0.5s
+  -webkit-animation-timing-function: linear
+  animation-timing-function: linear
+  -webkit-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+
+section .buttons button:first-of-type:hover:not(a button), .inspirations .texts button:hover, header .buttons button:hover, a.red:hover button
+  background-color: rgba(193, 0, 33, 1)
+  -webkit-animation-name: hvr-back-pulse
+  animation-name: hvr-back-pulse
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-delay: 0.5s
+  animation-delay: 0.5s
+  -webkit-animation-timing-function: linear
+  animation-timing-function: linear
+  -webkit-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+
+a.red button
+  border: none
+  padding: 0.6295vw 1.3vw
+    
+
+section .buttons a button:not(a.red button)
+  &:hover
+    background-color: rgba(0, 0, 0, 1)
+    -webkit-animation-name: hvr-back-pulse-black
+    animation-name: hvr-back-pulse-black
+    -webkit-animation-duration: 1s
+    animation-duration: 1s
+    -webkit-animation-delay: 0.5s
+    animation-delay: 0.5s
+    -webkit-animation-timing-function: linear
+    animation-timing-function: linear
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+
+.buttons button:last-of-type:hover:not(.red)
+  background-color: black
+  color: white
+
+
+section
+  h1
+    margin: 0
+
+  p
+    color: black
+    font-weight: 300
+
+  .wrapper
+    display: flex
+    position: relative
+    align-items: center
+
+.video
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  transform: translateY(-100vh)
+  position: fixed
+  z-index: 4
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  transition: .9s ease
+
+  div
+    display: flex
+    flex-direction: row-reverse
+
+  button
+    background: transparent
+    border: none
+    cursor: pointer
+    align-self: flex-start
+
+  &.active
+    transform: translateY(0)
+
+  iframe
+    height: 70vh
+    width: 70vw
+
+/* HEADER
+
+.logo
+  position: fixed
+  z-index: 2
+  transition: .34s ease
+
+  path:not(.first):not(.atlanca):not(.red)
+    fill: white
+    stroke: white
+
+  .red
+    fill: white
+
+  .first
+    stroke: white
+    fill: transparent
+
+  .atlanca
+    stroke: transparent
+    fill: white
+
+  &.blacked
+    .first
+      stroke: black
+
+    path:not(.first):not(.red):not(.atlanca)
+      fill: black
+      stroke: black
+
+    .atlanca
+      fill: black
+
+    .red
+      fill: #C10021
+
+    transform: translateY(-10px)
+
+.menuBox
+  position: fixed
+  display: flex
+  flex-direction: row-reverse
+  z-index: 1
+  transition: .34s ease
+
+.menu
+  background-color: transparent
+  border: none
+  cursor: pointer
+  overflow: hidden
+  display: flex
+  transition: .34s ease
+  align-items: center
+  position: relative
+
+  img
+    transform: translateX(-6px)
+    transition: .34s ease
+  
+  & .xbutton
+    position: absolute
+    opacity: 0
+    transition: .36s ease
+    left: 10px
+    right: 0
+    margin: auto
+
+  &:hover img:first-child
+    transform: translateX(-31px)
+
+  &.invert img
+    filter: invert(1)
+  &.invert svg path
+    stroke: black
+
+  & svg.open
+    & path
+      stroke: black
+
+.menuNav
+  transition: .36s ease
+  opacity: 0
+  pointer-events: none
+
+  a
+    color: black
+
+  &.open
+    opacity: 1
+    pointer-events: auto
+
+
+.manuNav.desktop
+  &.open
+    transition-delay: .36s
+
+
+.menuNav.mobile
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 64px
+  align-items: center
+  background: white
+  & a
+    color: black
+    font-size: 22.42px
+    line-height: 42.9px
+    letter-spacing: .66px !important
+  & a.current
+    color: #CED3DF
+  & svg
+    position: absolute
+  & svg.bg
+    bottom: 0
+    left: 0
+    width: 100vw
+    height: auto
+  & svg.boat
+    bottom: 20%
+    z-index: 1
+
+.menuBav.mobile.open
+  opacity: 1
+  pointer-events: auto
+
+
+
+
+.menu
+  &.open img:first-child
+    opacity: 0
+
+  img:last-child
+    transform: translateX(-56px)
+    opacity: 0
+
+  &.open img:last-child
+    opacity: 1
+
+header
+  h1, h2
+    text-align: center
+    align-self: center
+
+  h1
+    margin: 0
+
+  h2
+    margin-bottom: 2.75vh
+
+  nav
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    align-self: flex-end
+    align-items: center
+    z-index: 4
+
+  a span
+    background-color: white
+
+nav
+  .link, .select, .social
+    transition: .36s ease
+
+  &.close
+    .link, .select, .social
+      opacity: 0
+
+.link
+  letter-spacing: 1px
+
+.select
+  border: 1px solid white
+  border-radius: 12px
+  position: relative
+
+select
+  background: transparent url('projekt/icons/Kształt\ 16.svg') no-repeat right
+  border: none
+  color: white
+  letter-spacing: 1px
+  cursor: pointer
+  -webkit-appearance: none
+  box-sizing: content-box
+  transition: .36s ease
+
+  &:focus
+    outline: none
+
+  &:hover
+    background-color: #C10021
+
+.select:hover
+  background-color: #C10021
+
+select option
+  background: rgba(0, 0, 0, 0.5)
+
+header
+  div
+    display: flex
+    flex-direction: column
+
+  .wrapper .left
+    position: absolute
+
+  .left h2
+    text-align: left
+
+  .wrapper .center
+    justify-content: center
+
+.right
+  position: fixed
+  align-items: center
+  display: flex
+  flex-direction: column
+  place-items: center
+  z-index: 2
+  transition-delay: .1s
+  // height: 100vh
+  width: 5.75vw
+  right: 0
+
+  .cover
+    width: 7vw
+    right: 0
+    top: 0
+    z-index: 1
+    transform: translate(0, -17.75vh)
+    display: none
+    opacity: 0
+
+  &:hover .cover.on
+    opacity: 1
+
+  .cover.on
+    display: block
+
+.offer .right
+  position: relative
+  z-index: 1
+  height: auto
+  width: auto
+
+.right
+  &.invert
+    filter: invert(1)
+
+  button
+    background: transparent
+    border: none
+    margin: 10px 0
+    cursor: pointer
+
+    &:last-child
+      transform: rotate(180deg)
+
+  .line
+    width: 1px
+    height: 70px
+    background-color: white
+    z-index: 2
+
+    &:nth-child(2)
+      margin-bottom: 30px
+      margin-top: 8px
+
+    &:nth-child(8)
+      margin-top: 30px
+      margin-bottom: 8px
+
+  .circle
+    height: 7px
+    width: 7px
+    border-radius: 100%
+    border: 1px solid white
+    margin: 7px 0
+    cursor: pointer
+    transition: .36s ease
+    z-index: 2
+
+.circle
+  &:hover, &.active
+    background-color: white
+
+header
+  .buttons
+    display: flex
+    flex-direction: row
+    align-self: center
+
+    button
+      border: 1px solid #FEFFF1
+      color: white
+
+      &:first-child
+        padding: 11px 27px
+
+      &:last-child
+        display: flex
+        place-content: center
+
+      &:last-of-type:hover
+        background-color: #C10021
+        border: none
+
+    .icons
+      position: relative
+      width: 20px
+      height: 20px
+      left: -4px
+      bottom: 1px
+      overflow: hidden
+      flex-direction: row
+
+      img
+        position: absolute
+        top: 25%
+
+        &:first-child
+          transform: translateX(-12px)
+
+    button:last-of-type:hover .icons img:first-child
+      transform: translateX(0)
+      transition: .34s ease
+
+  .wrapper
+    position: relative
+
+    a
+      align-self: center
+
+  .bottom
+    flex-direction: row
+    position: relative
+    bottom: 7.5vh
+    justify-content: space-between
+    width: 100%
+    position: absolute
+
+    p
+      font-size: 17px
+      letter-spacing: 1px
+      line-height: 27px
+
+    a
+      cursor: pointer
+      transition: .34s ease-in
+
+    div:last-child
+      text-align: end
+
+/* OFFER
+
+.about
+  .bg
+    height: 100vh
+
+/* PRICING
+
+.pricing
+  justify-content: flex-end
+
+  .wrapper
+    flex-direction: row-reverse
+    place-content: space-around
+
+  .content span
+    width: 45px
+    height: 1px
+    background-color: black
+    display: block
+
+// OFFER //
+
+.inspirations div
+  height: 100%
+  display: flex
+  align-items: center
+  flex-direction: column
+
+.texts
+  position: absolute
+  z-index: 2
+
+.inspirations
+  display: flex
+  justify-content: center
+  background-color: black
+  color: white
+  &:hover .photo
+    transform: scale(1.05)
+    opacity: 1
+
+  & .photo
+    opacity: .7
+    background-size: cover
+    transition: .5s
+
+
+/* CONTACT
+
+.contact
+  .content
+    display: flex
+
+.box
+  border: 1px solid lightgray
+  display: flex
+  // align-items: center
+  flex-direction: column
+  // justify-content: center
+  // text-align: center
+
+.contact .text
+  text-align: center
+  // margin-bottom: 100px
+  transition: .34s ease
+  transition-delay: .34s
+
+/* FOOTER
+
+footer
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+  p
+    font-weight: bold
+
+.black
+  background-color: black
+  width: 100%
+  // align-self: flex-end
+  // display: flex
+  // justify-content: center
+
+// footer .wrapper
+//   align-self: center
+//   align-items: center
+//   justify-content: space-evenly
+
+.black div
+  display: flex
+
+.logoBox
+  position: relative
+
+  div
+    display: flex
+    flex-direction: column
+
+footer
+  a
+    display: flex
+    cursor: pointer
+
+  nav a
+    flex-direction: column
+
+a
+  span, p span
+    width: 0%
+    transition: .34s ease
+    height: 2px
+    display: block
+
+  &:hover span
+    width: 100%
+
+  span, p span
+    background-color: #C10021
+
+footer
+  p
+    color: white
+    letter-spacing: 1px
+
+  .media
+    align-items: center
+    position: relative
+
+    b, svg path
+      transition: .36s ease
+
+    &:hover
+      b
+        color: #00ffea
+
+      svg path
+        fill: #00ffea
+
+    p
+      font-weight: bold
+
+    &:last-of-type
+      position: relative
+
+      p
+        font-weight: normal
+
+  button
+    background-color: #C10021
+    border: none
+    display: flex
+    justify-content: center
+    position: relative
+    border-radius: 30px 30px 0 0
+    cursor: pointer
+
+    img, span
+      transition: .36s ease
+
+    &:hover
+      img, span
+        transform: translateY(-5px)
+
+    img
+      position: absolute
+
+    span
+      background: white
+      display: block
+      align-self: center

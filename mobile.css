@@ -1,0 +1,1066 @@
+/* DESKTOP */
+@media only screen and (min-width: 1900px) {
+  .about .bg {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 1900px) and (min-width: 1700px) {
+  .about .bg {
+    transform: translateX(-5%);
+  }
+}
+@media (max-width: 1700px) and (min-width: 1500px) {
+  .about .bg {
+    transform: translateX(-10%);
+  }
+}
+@media (max-width: 1500px) and (min-width: 1300px) {
+  .about .bg {
+    transform: translateX(-15%);
+  }
+}
+@media (max-width: 1300px) and (min-width: 1000px) {
+  .about .bg {
+    transform: translateX(-20%);
+  }
+}
+@media (max-width: 1000px) and (min-width: 768px) {
+  .about .bg {
+    transform: translateX(-25%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+
+  html, body {
+    overflow: hidden;
+  }
+
+  .loader {
+    height: 100vh;
+    z-index: 10;
+  }
+  .loader div.text {
+    top: 30%;
+  }
+  .loader svg.dot-1, .loader svg.dot-2, .loader svg.dot-3 {
+    bottom: 7px;
+  }
+  .loader svg.dot-1 {
+    right: 15px;
+  }
+  .loader svg.dot-2 {
+    right: 8px;
+  }
+  .loader svg.dot-3 {
+    right: 1px;
+  }
+  .loader img.boat {
+    bottom: 70%;
+    animation: boatDesktop 2s infinite;
+    left: 37.75%;
+  }
+
+  @keyframes water {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-10%);
+    }
+  }
+  @keyframes boatDesktop {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-11px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .global {
+    transition: 0.36s ease;
+    transform: translateY(0);
+  }
+
+  header, section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  h2 {
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+    margin-bottom: 2.5vh;
+  }
+
+  h3 {
+    font-size: 1.75vw;
+    letter-spacing: 1px;
+  }
+
+  h4 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  a {
+    font-size: 17px;
+  }
+
+  p {
+    line-height: 2.85vh;
+    font-size: 19px;
+  }
+
+  header, section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .buttons {
+    margin-top: 4.5vh;
+  }
+
+  section .buttons a button:not(a.red button) {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    font-weight: 500;
+  }
+
+  nav a {
+    padding-bottom: 2px;
+  }
+
+  section .buttons {
+    margin-top: 6vh;
+  }
+
+  .video {
+    width: 100%;
+    height: 100vh;
+  }
+  .video iframe {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .logo {
+    left: 50px;
+    top: 50px;
+  }
+
+  .menuBox {
+    right: 45px;
+    top: 55px;
+  }
+
+  .menu {
+    width: 35.3px;
+    height: 19.27px;
+    margin-left: 40px;
+  }
+
+  nav .link {
+    margin: 0 0 2px 2.5vw;
+    letter-spacing: 1px;
+  }
+  nav .link.last {
+    margin-right: 37px;
+  }
+  nav .social {
+    margin-right: 20px;
+  }
+  nav .select {
+    border-radius: 12px;
+    padding: 2px 8px;
+    bottom: 3px;
+  }
+  nav .select select {
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 2px 15px 2px 1px;
+  }
+
+  .right {
+    top: 29.75vh;
+  }
+  .right button {
+    margin: 10px 0;
+  }
+  .right button .line {
+    height: 70px;
+  }
+  .right button .line:nth-child(2) {
+    margin-bottom: 30px;
+    margin-top: 8px;
+  }
+  .right button .line:nth-child(8) {
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+  .right .circle {
+    height: 7px;
+    width: 7px;
+    margin: 7px 0;
+  }
+
+  .loaded header {
+    background-position-y: -1.875vw;
+  }
+
+  header {
+    opacity: 0;
+    background: #163063 url(projekt/home.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: 1s ease;
+    transition-delay: 0.34s;
+    position: relative;
+  }
+  header nav {
+    margin: 48px 125px 0 0;
+  }
+  header .wrapper h1 {
+    width: 60%;
+    margin: 0;
+    font-size: 4.75vw;
+    line-height: 11.4vh;
+  }
+  header .wrapper h2 {
+    margin-bottom: 2.75vh;
+  }
+  header .wrapper .left {
+    margin-left: -5.4vw;
+    bottom: 14vh;
+  }
+  header .wrapper .left h2 {
+    transform: rotate(-90deg);
+    width: 90%;
+    line-height: 4.15vh;
+    letter-spacing: 2px;
+  }
+  header .wrapper .center {
+    margin-top: 8vw;
+  }
+  header button {
+    font-size: calc(1.45vh + 3px);
+    margin-right: 15px;
+    letter-spacing: 0.5px;
+  }
+  header .buttons {
+    transform: translateX(20px);
+  }
+  header .buttons button {
+    margin-right: 25px;
+  }
+  header .buttons button:first-child {
+    padding: 11px 27px;
+  }
+  header .buttons button:last-child {
+    padding: 11px 0.5vw;
+    width: 217px;
+  }
+  header .buttons .icons {
+    width: 20px;
+    height: 20px;
+    left: -4px;
+    bottom: 1px;
+  }
+  header .buttons img {
+    position: absolute;
+    top: 25%;
+  }
+  header .buttons:first-child {
+    transform: translateX(-12px);
+  }
+  header .buttons button:last-of-type:hover .icons img:first-child {
+    transform: translateX(0);
+  }
+  header .bottom {
+    bottom: 7.5vh;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  header .bottom p {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+  header .bottom a {
+    transform: translate(-10px, 10px);
+  }
+  header .bottom a:hover {
+    transform: translate(-10px, 15px);
+  }
+
+  section {
+    transition: 1s ease;
+    transition-delay: 0.34s;
+    opacity: 0;
+  }
+  section h1 {
+    font-size: 3.65vw;
+    line-height: 8.4vh;
+  }
+  section p {
+    font-size: 19px;
+    line-height: 27px;
+  }
+  section button {
+    font-size: calc(1.45vh + 3px);
+    margin-right: 15px;
+    letter-spacing: 0.5px;
+    padding: 0.525vw 1.3vw;
+    margin-right: 20px;
+  }
+  section .buttons a {
+    margin-right: 20px;
+  }
+  section .buttons a button {
+    font-size: calc(1.45vh + 3px);
+    margin-right: 15px;
+    letter-spacing: 0.5px;
+    margin-right: 0;
+  }
+
+  .about.active, .offer.active, .pricing.active, .contact.active {
+    opacity: 1;
+  }
+
+  /* ABOUT */
+  .about {
+    justify-content: center;
+  }
+  .about .wrapper .content {
+    position: absolute;
+    right: 13vw;
+    margin-left: 30vw;
+  }
+
+  /* PRICING */
+  .pricing {
+    justify-content: flex-end;
+  }
+  .pricing .wrapper {
+    flex-direction: row-reverse;
+    place-content: space-around;
+    margin: 0 170px 0 160px;
+  }
+  .pricing .content {
+    margin: 0 0 10vh 20px;
+  }
+  .pricing .content span {
+    width: 45px;
+    height: 1px;
+    margin: 3.85vw 0 1.85vw;
+  }
+  .pricing .bg {
+    margin-left: 2vw;
+    width: 37.5vw;
+  }
+
+  /* OFFER */
+  .offer {
+    justify-content: flex-end;
+  }
+  .offer h2 {
+    align-self: center;
+    margin-bottom: 25px;
+  }
+
+  .background {
+    grid-template-columns: repeat(1, 1fr);
+    height: 88vh;
+    grid-auto-flow: column;
+    margin-top: 18px;
+    display: grid;
+  }
+  .background .inspirations {
+    position: relative;
+    overflow: hidden;
+  }
+  .background .inspirations .texts {
+    justify-content: center;
+  }
+  .background .inspirations .texts button {
+    color: white;
+    border: 1px solid white;
+  }
+  .background .inspirations .texts button:hover {
+    border: 1px solid #c10021;
+  }
+  .background h2 {
+    margin: 30px 0;
+  }
+
+  .offer .texts button {
+    margin-top: 35px;
+    transform: translateX(5px);
+  }
+
+  .background div {
+    width: 25vw;
+  }
+
+  .background .inspirations:first-child .photo {
+    background-image: url("projekt/1.png");
+  }
+  .background .inspirations:nth-child(2) .photo {
+    background-image: url("projekt/2.png");
+  }
+  .background .inspirations:nth-child(3) .photo {
+    background-image: url("projekt/3.png");
+  }
+  .background .inspirations:last-child .photo {
+    background-image: url("projekt/4.png");
+  }
+
+  .cover {
+    height: 88vh;
+    width: 7vw;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: 0;
+    transform: translate(4vw, 36vh);
+  }
+
+  /* CONTACT */
+  .contact {
+    height: 100vh;
+    place-content: space-around;
+  }
+  .contact h4 {
+    margin: 25px 0 10px;
+  }
+  .contact .content {
+    margin: 90px 0 0;
+    width: 80%;
+    justify-content: space-evenly;
+    align-self: center;
+    transition: 0.34s;
+    transition-delay: 0.34s;
+  }
+  .contact .buttons {
+    justify-content: center;
+    margin-top: 4vh;
+    transform: translateX(10px);
+  }
+
+  .box {
+    width: 320px;
+    height: 362px;
+    margin: 0 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact .text {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .black {
+    height: 12.1vh;
+    width: 100%;
+    align-self: flex-end;
+    justify-content: center;
+    display: flex;
+  }
+
+  footer .wrapper {
+    width: 96.5%;
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+  }
+
+  .black div {
+    display: flex;
+  }
+
+  .logoBox {
+    margin-right: 4vw;
+    right: 2vw;
+  }
+  .logoBox div {
+    flex-direction: column;
+    margin: 0 0 3px 30px;
+  }
+  .logoBox p {
+    line-height: 20.5px;
+  }
+
+  footer a, p {
+    font-size: calc(9px + .4vw);
+  }
+
+  footer nav a {
+    flex-direction: column;
+  }
+
+  a span, a p span {
+    height: 2px;
+    margin-top: 2px;
+  }
+  a:hover span {
+    width: 100%;
+  }
+
+  footer p {
+    letter-spacing: 1px;
+  }
+  footer a.kresky {
+    left: 3vw;
+    margin-right: 2vh;
+  }
+  footer a.kresky p {
+    font-weight: 400;
+    margin-right: 0.75vw;
+    letter-spacing: 2px;
+  }
+  footer .media {
+    align-items: center;
+    left: 1.25vw;
+    margin-bottom: 6px;
+  }
+  footer .media p {
+    margin-left: 10px;
+  }
+  footer .media:last-of-type {
+    left: 3vw;
+    margin-right: 2vh;
+  }
+  footer .media:last-of-type p {
+    margin-right: 0.75vw;
+    letter-spacing: 2px;
+  }
+  footer button {
+    width: 46px;
+    height: 86px;
+    justify-content: center;
+    top: 16px;
+    left: 2vw;
+    margin-left: 0.5vw;
+  }
+  footer button:hover img, footer button:hover span {
+    transform: translateY(-5px);
+  }
+  footer button img {
+    position: absolute;
+    top: 25px;
+  }
+  footer button span {
+    height: 33px;
+    width: 2px;
+  }
+
+  @supports (-moz-appearance: none) {
+    .select {
+      bottom: 5px;
+      padding: 3px 8px;
+    }
+    .select select {
+      padding: 0 10px 0 4px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
+
+  * {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 22.42px;
+    line-height: 26.91px;
+    letter-spacing: 0.66px;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: 1.32px;
+    margin: 0 0 8px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.48px;
+    margin: 14px 0 0;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+  }
+
+  a, button {
+    font-size: 17px;
+    line-height: 20.4px;
+    letter-spacing: 0.85px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons a button, .buttons button {
+    padding: 11.3px 25.6px;
+  }
+
+  .loader {
+    height: 100vh;
+    z-index: 10;
+  }
+  .loader div.text {
+    top: 144px;
+    width: 260px;
+  }
+  .loader svg.dot-1, .loader svg.dot-2, .loader svg.dot-3 {
+    bottom: 6%;
+  }
+  .loader svg.dot-1 {
+    right: 5%;
+  }
+  .loader svg.dot-2 {
+    right: 4%;
+  }
+  .loader svg.dot-3 {
+    right: 3%;
+  }
+  .loader img.boat {
+    left: 32px;
+    bottom: 64%;
+    width: 170.679px;
+    animation: boatMobile 2s infinite;
+  }
+  .loader div.container {
+    width: 100%;
+    height: 320px;
+  }
+  .loader img.water {
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+  }
+
+  @keyframes water {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-19.9%);
+    }
+  }
+  @keyframes boatMobile {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  img.logo {
+    width: 37.197%;
+    top: 18px;
+    left: 12px;
+  }
+
+  img.logo.mobile {
+    transition: 0.36s ease;
+  }
+
+  img.xbutton {
+    filter: invert(1);
+  }
+
+  div.menuBox {
+    width: 100%;
+    display: flex;
+    padding: 19.78px 12px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  div.menuBox button {
+    padding: 0;
+    width: 24.73px;
+    overflow: hidden;
+    position: relative;
+  }
+  div.menuBox button .xbutton {
+    opacity: 0;
+    position: absolute;
+  }
+  div.menuBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 53px;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: 0.36s ease;
+    transform: translateY(-100%);
+  }
+
+  div.menuBox.after::after {
+    transform: translateY(0);
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  .video {
+    height: 100vh;
+    z-index: 6;
+  }
+  .video iframe {
+    height: 40vh;
+    width: 84%;
+  }
+
+  .loaded header {
+    background-position-y: -4px;
+  }
+
+  header {
+    background-image: url("projekt/mobile/header.jpg");
+    height: calc( 100vh - 51px );
+  }
+  header div.wrapper {
+    padding-top: 88px;
+  }
+  header div.bottom {
+    justify-content: center;
+    bottom: 31px;
+  }
+  header div.bottom a {
+    display: flex;
+    justify-content: center;
+  }
+  header div.bottom a img {
+    width: 68.57%;
+  }
+  header div.buttons {
+    margin-top: 18px;
+  }
+
+  section {
+    box-sizing: border-box;
+  }
+  section div.buttons {
+    margin-top: 24px;
+  }
+
+  section.about {
+    padding-left: 12px;
+    padding-top: 72px;
+    padding-bottom: 148px;
+    background-image: url("projekt/mobile/rental.png");
+    background-position-x: 37%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+  }
+  section.about h3 {
+    display: flex;
+    align-items: center;
+  }
+  section.about h3 img {
+    margin-right: 10px;
+  }
+  section.about p {
+    margin-top: 24px;
+  }
+  section.about button {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+  }
+
+  section.pricing {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+  section.pricing div.wrapper {
+    flex-direction: column-reverse;
+  }
+  section.pricing div.wrapper h1, section.pricing div.wrapper h2, section.pricing div.wrapper p, section.pricing div.wrapper .buttons {
+    padding-left: 12px;
+  }
+  section.pricing div.wrapper span {
+    display: none;
+  }
+  section.pricing div.wrapper img {
+    margin: 18px 0;
+    width: 100%;
+  }
+  section.pricing div.wrapper a {
+    width: max-content;
+  }
+  section.pricing div.wrapper a button {
+    border: 1px solid #c10021;
+  }
+
+  section.offer {
+    display: flex;
+    flex-direction: column;
+  }
+  section.offer div.first {
+    background-image: url("projekt/mobile/offer.png");
+    height: 322.31px;
+    width: 100%;
+    padding: 24px 12px 30px;
+    color: white;
+    background-size: cover;
+    background-position-x: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 1;
+    background-repeat: no-repeat;
+  }
+  section.offer div.first h2 {
+    margin-bottom: 8px;
+  }
+  section.offer div.first button {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  section.offer h4 {
+    order: 2;
+    font-size: 22px;
+    line-height: 26.4px;
+    letter-spacing: 1.54px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    margin: 16px 0;
+  }
+  section.offer .background {
+    padding: 0 12px;
+    order: 2;
+  }
+  section.offer .background .inspirations {
+    margin-bottom: 12px;
+    height: 322px;
+    position: relative;
+    overflow: hidden;
+  }
+  section.offer .background .inspirations:first-child .photo {
+    background-image: url("projekt/mobile/inspirations1.png");
+  }
+  section.offer .background .inspirations:nth-child(2) .photo {
+    background-image: url("projekt/mobile/inspirations2.png");
+  }
+  section.offer .background .inspirations:nth-child(3) .photo {
+    background-image: url("projekt/mobile/inspirations3.png");
+  }
+  section.offer .background .inspirations:last-child .photo {
+    background-image: url("projekt/mobile/inspirations4.png");
+  }
+  section.offer .background .inspirations .texts {
+    position: absolute;
+    justify-content: flex-end;
+    bottom: 30px;
+  }
+  section.offer .background .inspirations .texts a {
+    margin-top: 20px;
+  }
+  section.offer .background .inspirations .texts a button {
+    color: white;
+    border: 1px solid white;
+    padding: 11.31px 22.61px;
+  }
+  section.offer .background .inspirations .texts h1 {
+    font-size: 34px;
+    line-height: 40.8px;
+    letter-spacing: 1.02px;
+  }
+  section.offer .background .inspirations .photo {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+
+  section.contact {
+    padding-top: 30px;
+    padding-bottom: 76px;
+  }
+  section.contact .content {
+    flex-direction: column;
+    padding: 0 13px 80px;
+  }
+  section.contact .content .box {
+    align-items: center;
+    padding: 60px 0;
+    margin-bottom: 12px;
+  }
+  section.contact .content .box h4 {
+    font-size: 30px;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+    margin: 32px 0 16px;
+  }
+  section.contact .content .box h4 div.mobile {
+    width: 133px;
+    display: flex;
+    justify-content: center;
+  }
+  section.contact .buttons {
+    padding: 0 13px;
+  }
+  section.contact .buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+  section.contact .buttons a.last button {
+    margin-top: 12px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+
+  footer .black {
+    padding: 24px 12px 12px;
+    box-sizing: border-box;
+  }
+  footer .black .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .black .wrapper nav {
+    order: 1;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  footer .black .wrapper nav a {
+    letter-spacing: 0.85px !important;
+  }
+  footer .black .wrapper nav div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .black .wrapper a p {
+    line-height: 19.2px;
+    letter-spacing: 0.8px;
+  }
+  footer .black .wrapper a.first {
+    order: 2;
+    margin-bottom: 24px;
+    align-self: flex-start;
+  }
+  footer .black .wrapper a.first img {
+    margin-right: 12px;
+  }
+  footer .black .wrapper a.second {
+    align-self: flex-start;
+    order: 3;
+    margin-bottom: 72px;
+  }
+  footer .black .wrapper a.second img {
+    margin-right: 12px;
+  }
+  footer .black .wrapper div.bridge {
+    order: 4;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 144px;
+  }
+  footer .black .wrapper div.bridge p {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+  }
+  footer .black .wrapper div.bridge p span {
+    font-weight: 400;
+  }
+  footer .black .wrapper div.bridge p.last {
+    text-align: right;
+  }
+  footer .black .wrapper .logoBox {
+    order: 5;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer .black .wrapper .logoBox p {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+  }
+  footer .black .wrapper .logoBox p.bold {
+    font-weight: bold;
+  }
+  footer .black .wrapper .logoBox a p {
+    font-weight: bold;
+  }
+  footer .black .wrapper .logoBox a span {
+    font-weight: 400;
+  }
+  footer .black .wrapper .logoBox div.mobile a {
+    display: flex;
+    align-items: center;
+  }
+  footer .black .wrapper .logoBox div.mobile a svg {
+    margin-left: 12px;
+  }
+  footer .black a.mobile, footer .black svg.boat {
+    position: absolute;
+  }
+  footer .black a.mobile {
+    bottom: 0;
+  }
+  footer .black a.mobile button {
+    width: 45px;
+    height: 86px;
+  }
+  footer .black a.mobile button img {
+    top: 25px;
+  }
+  footer .black a.mobile button span {
+    width: 2px;
+    height: 33.07px;
+  }
+  footer .black svg.boat {
+    bottom: 30px;
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

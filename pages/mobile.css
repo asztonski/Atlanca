@@ -1,0 +1,1851 @@
+@media (min-width: 1700px) {
+  .mobile {
+    display: none;
+  }
+
+  nav a.link, button.reg-btn, footer a, footer a p, footer p {
+    font-size: 17px;
+    line-height: 20.4px;
+    letter-spacing: 0.85px;
+  }
+
+  h1 {
+    font-size: 92px;
+    line-height: 110.4px;
+    letter-spacing: 2.76px;
+  }
+
+  header h2 {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 2.1px;
+  }
+
+  section h2 {
+    font-size: 68px;
+    line-height: 81.6px;
+    letter-spacing: 2.54px;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 2.1px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+    margin: 0 0 16px;
+  }
+
+  h5 {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+
+  button.reg-btn {
+    border-radius: 30px;
+  }
+
+  .loader {
+    height: 100vh;
+    z-index: 10;
+  }
+  .loader div.text {
+    top: 30%;
+  }
+  .loader svg.dot-1, .loader svg.dot-2, .loader svg.dot-3 {
+    bottom: 7px;
+  }
+  .loader svg.dot-1 {
+    right: 15px;
+  }
+  .loader svg.dot-2 {
+    right: 8px;
+  }
+  .loader svg.dot-3 {
+    right: 1px;
+  }
+  .loader img.boat {
+    bottom: 70%;
+    animation: boatDesktop 2s infinite;
+    left: 37.75%;
+  }
+
+  @keyframes boatDesktop {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-11px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes water {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-18.2%);
+    }
+  }
+  nav div {
+    position: relative;
+    bottom: 8px;
+  }
+  nav div a.link {
+    margin: 0 48px 0 0;
+  }
+  nav div a.last {
+    margin: 0 37px 0 0;
+  }
+  nav div a.social {
+    margin: 0 20px 0 0;
+  }
+  nav div div.language {
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin: 0 40px 0 0;
+  }
+  nav div div.language select {
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 2px 15px 2px 1px;
+  }
+  nav div button {
+    width: 34.26px;
+    height: 19.27px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+  nav div button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.36s ease;
+  }
+  nav div button:hover img {
+    transform: translateX(-40%);
+  }
+
+  nav.global {
+    padding: 20px;
+    align-items: flex-end;
+    transform: translateY(-100%);
+    background-color: white;
+  }
+  nav.global div {
+    align-items: center;
+    height: min-content;
+  }
+  nav.global div a.link {
+    margin: 0 48px 0 0;
+    color: black;
+  }
+  nav.global div a.link::after {
+    background-color: #c10021;
+  }
+  nav.global div a.last {
+    margin: 0 37px 0 0;
+    color: black;
+  }
+  nav.global div a.last::after {
+    background-color: #c10021;
+  }
+  nav.global div a.social {
+    margin: 0 20px 0 0;
+  }
+  nav.global div div.language {
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin: 0 40px 0 0;
+  }
+  nav.global div div.language select {
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 2px 15px 2px 1px;
+  }
+  nav.global div button {
+    width: 34.26px;
+    height: 19.27px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+  nav.global div button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.36s ease;
+  }
+  nav.global div button:hover img {
+    transform: translateX(-40%);
+  }
+
+  .loaded header {
+    background-position-y: -32px;
+  }
+
+  header {
+    height: 100vh;
+    padding: 50px 50px 53px;
+    background-image: url("images/header.png");
+  }
+  header h1 {
+    margin: 24px 0 36px;
+  }
+  header h2 {
+    margin: 0;
+  }
+  header p {
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.85px;
+  }
+  header button.reg-btn {
+    padding: 10.315px 38.68px;
+  }
+
+  section h2 {
+    margin: 24px 0 36px;
+  }
+  section h3 {
+    margin: 0;
+  }
+  section p {
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0.57px;
+    margin: 0;
+  }
+  section button.reg-btn {
+    padding: 13.89px 25.6px;
+  }
+  section button.red {
+    margin-right: 20px;
+  }
+  section .buttonbox {
+    margin-top: 56px;
+  }
+
+  section.about {
+    padding: 0 352px 0 0;
+    justify-content: space-between;
+  }
+  section.about div.left {
+    background-image: url("images/about.png");
+    height: 970px;
+    width: 718px;
+  }
+  section.about div.right {
+    width: 38.8%;
+    align-self: center;
+  }
+
+  section.offer {
+    padding: 168px 242px 0;
+  }
+  section.offer h2 {
+    margin-bottom: 80px;
+  }
+  section.offer .container {
+    justify-content: space-between;
+  }
+  section.offer .container .wrapper .box.first {
+    margin-bottom: 56px;
+  }
+  section.offer .container .wrapper .svgbox {
+    width: 132.2px;
+    display: flex;
+    justify-content: center;
+    margin-right: 64px;
+  }
+
+  section.rental {
+    padding: 0 264px 0 0;
+  }
+  section.rental div.left {
+    background-image: url("images/rental.png");
+    width: 960px;
+    height: 970px;
+  }
+  section.rental div.right {
+    align-self: center;
+    width: 42.5%;
+  }
+  section.rental div.right h2 {
+    margin-bottom: 32px;
+  }
+  section.rental div.right div.flex {
+    width: auto;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  section.rental div.right div.flex svg {
+    margin-right: 10px;
+  }
+  section.rental div.right div.flex h4 {
+    margin: 0;
+  }
+
+  section.quality {
+    padding: 0 0 0 240px;
+  }
+  section.quality div.right {
+    background-image: url("images/quality.png");
+    height: 756px;
+    width: 74.5%;
+  }
+  section.quality div.left {
+    justify-content: center;
+    align-self: center;
+    width: 55.5%;
+  }
+  section.quality div.left h2 {
+    margin-bottom: 0;
+  }
+  section.quality div.left span.line {
+    height: 1px;
+    width: 45px;
+    background-color: black;
+    display: inline-block;
+    margin: 68px 0 28px;
+  }
+
+  section.features {
+    padding: 168px 240px 184px;
+  }
+  section.features h3 {
+    margin-bottom: 68px;
+  }
+  section.features div.wrapper {
+    justify-content: space-between;
+  }
+  section.features div.column div.flex {
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  section.features div.column div.flex div.svgbox {
+    margin-right: 30px;
+    width: 47.25px;
+    display: flex;
+    justify-content: center;
+  }
+  section.features div.column div.flex div {
+    align-items: flex-start;
+  }
+  section.features div.column div.flex div.column {
+    margin: 0;
+  }
+  section.features div.bottom {
+    align-items: center;
+    text-align: center;
+    margin-top: 144px;
+  }
+
+  section.summary {
+    padding: 0 240px 128px;
+  }
+  section.summary .wrapper {
+    justify-content: space-between;
+    margin-bottom: 88px;
+  }
+  section.summary .wrapper div {
+    align-items: center;
+    border: 1px solid #F3F4F7;
+    width: fill;
+    box-sizing: border-box;
+    padding: 0 64px;
+  }
+  section.summary .wrapper div svg {
+    margin: 64px 0 32px;
+  }
+  section.summary .wrapper div p {
+    margin-bottom: 56px;
+  }
+  section.summary .bottom {
+    align-items: center;
+  }
+
+  footer {
+    color: white;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+  }
+  footer a, footer p {
+    top: 1px;
+  }
+  footer .wrapper {
+    width: 100%;
+    padding: 30.1px 120px 38.5px 53px;
+    justify-content: space-between;
+  }
+  footer .wrapper .flex {
+    align-items: center;
+    height: min-content;
+    align-self: center;
+  }
+  footer .wrapper .flex p {
+    margin: 0;
+  }
+  footer .wrapper .logoBox {
+    position: relative;
+    top: 5px;
+  }
+  footer .wrapper .logoBox svg {
+    margin-right: 30px;
+  }
+  footer .wrapper .logoBox p {
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  footer .wrapper nav {
+    position: relative;
+    left: 7.15%;
+  }
+  footer .wrapper nav a {
+    margin-left: 48px;
+  }
+  footer .wrapper nav a.first {
+    margin: 0;
+  }
+  footer .wrapper a img {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  footer .wrapper a svg {
+    margin-left: 16px;
+  }
+  footer .wrapper a.first {
+    margin-right: 56px;
+  }
+  footer .wrapper a.last p {
+    font-weight: normal;
+  }
+  footer .wrapper div.mediabox {
+    margin-left: 104px;
+  }
+  footer .wrapper div.mediabox a.first {
+    margin-right: 56px;
+  }
+  footer a.desktop {
+    align-items: center;
+    height: min-content;
+    align-self: center;
+  }
+  footer a.desktop p {
+    font-weight: 400;
+    margin: 0;
+  }
+  footer a.arrow {
+    position: relative;
+    right: 53px;
+    bottom: -4px;
+    align-items: flex-end;
+    height: min-content;
+    align-self: flex-end;
+  }
+  footer a.arrow button {
+    position: relative;
+    padding: 0;
+    justify-content: center;
+  }
+  footer a.arrow button .arrow, footer a.arrow button .line {
+    position: absolute;
+  }
+  footer a.arrow button .arrow {
+    top: 27%;
+  }
+  footer a.arrow button .line {
+    align-self: center;
+  }
+
+  body.headerless nav:not(footer nav) {
+    padding: 50px 50px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(0);
+  }
+  body.headerless nav:not(footer nav) a.link, body.headerless nav:not(footer nav) a.last {
+    color: black;
+  }
+  body.headerless section.first {
+    height: 100vh;
+    position: relative;
+    padding-top: 223px;
+  }
+  body.headerless section.first .bridge {
+    justify-content: space-between;
+    position: absolute;
+    bottom: 44px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+  }
+  body.headerless footer a {
+    color: white;
+  }
+
+  body.prices nav:not(footer nav) {
+    background-color: white;
+  }
+  body.prices section.prices {
+    padding: 235px 240px 108px;
+    justify-content: space-between;
+  }
+  body.prices section.prices .right {
+    width: 51.48%;
+    padding-top: 56px;
+  }
+  body.prices section.prices .right div span.line {
+    width: 80%;
+  }
+  body.prices section.prices .right div p {
+    font-size: 30px;
+    line-height: 83px;
+    letter-spacing: 0;
+    text-transform: lowercase;
+  }
+
+  .mapbox {
+    background-image: url("images/map_desktop.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  body.contact nav {
+    background-color: transparent;
+  }
+  body.contact section.contact .container {
+    padding: 0 768px 0 240px;
+    width: 100%;
+  }
+  body.contact section.contact .container .wrapper {
+    margin-top: 48px;
+    justify-content: space-between;
+  }
+  body.contact section.contact svg {
+    margin-right: 16px;
+  }
+  body.contact section.contact .left div.flex {
+    margin-bottom: 72px;
+  }
+  body.contact section.contact .left div.flex svg {
+    position: relative;
+    top: 7px;
+  }
+  body.contact section.contact .left p.bold {
+    margin-bottom: 8px;
+  }
+  body.contact section.contact .right p.last {
+    margin-top: 56px;
+  }
+  body.contact section.contact .right p.phone {
+    font-size: 44px;
+    line-height: 39.32px;
+    letter-spacing: 0;
+    align-items: center;
+  }
+  body.contact section.contact .right p.phone svg {
+    position: relative;
+    top: 3px;
+  }
+  body.contact section.contact .right p.bold {
+    margin-bottom: 16px;
+  }
+  body.contact section.contact .right a.flex {
+    color: black;
+    width: max-content;
+  }
+  body.contact section.contact .right a.first {
+    margin-bottom: 20px;
+  }
+  body.contact section.contact .right a p {
+    position: relative;
+    top: 3px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1700px) {
+  .mobile {
+    display: none;
+  }
+
+  nav a.link, button.reg-btn, footer a, footer a p, footer p {
+    font-size: 0.8854166667vw;
+    line-height: 1.0625vw;
+    letter-spacing: 0.0442708333vw;
+  }
+
+  h1 {
+    font-size: 4.7916666667vw;
+    line-height: 5.75vw;
+    letter-spacing: 0.14375vw;
+  }
+
+  header h2 {
+    font-size: 1.5625vw;
+    line-height: 1.875vw;
+    letter-spacing: 0.109375vw;
+  }
+
+  section h2 {
+    font-size: 3.5416666667vw;
+    line-height: 4.25vw;
+    letter-spacing: 0.1322916667vw;
+  }
+
+  h3 {
+    font-size: 1.5625vw;
+    line-height: 1.875vw;
+    letter-spacing: 0.109375vw;
+  }
+
+  h4 {
+    font-size: 1.5625vw;
+    line-height: 1.40625vw;
+    letter-spacing: 0.046875vw;
+    margin: 0 0 0.8333333333vw;
+  }
+
+  h5 {
+    font-size: 0.9895833333vw;
+    line-height: 1.5625vw;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+
+  button.reg-btn {
+    border-radius: 1.5625vw;
+  }
+
+  .loader {
+    height: 100vh;
+    z-index: 10;
+  }
+  .loader div.text {
+    top: 30%;
+  }
+  .loader svg.dot-1, .loader svg.dot-2, .loader svg.dot-3 {
+    bottom: 0.3645833333vw;
+  }
+  .loader svg.dot-1 {
+    right: 0.78125vw;
+  }
+  .loader svg.dot-2 {
+    right: 0.4166666667vw;
+  }
+  .loader svg.dot-3 {
+    right: 0.0520833333vw;
+  }
+  .loader img.boat {
+    bottom: 70%;
+    animation: boatDesktop 2s infinite;
+    left: 37.75%;
+  }
+
+  @keyframes boatDesktop {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-11px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes water {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-18.2%);
+    }
+  }
+  nav div {
+    position: relative;
+    bottom: 0.4166666667vw;
+  }
+  nav div a.link {
+    margin: 0 2.5vw 0 0;
+  }
+  nav div a.last {
+    margin: 0 1.9270833333vw 0 0;
+  }
+  nav div a.social {
+    margin: 0 1.0416666667vw 0 0;
+  }
+  nav div div.language {
+    border-radius: 0.625vw;
+    padding: 0.1041666667vw 0.4166666667vw;
+    margin: 0 2.0833333333vw 0 0;
+  }
+  nav div div.language select {
+    font-size: 0.8854166667vw;
+    letter-spacing: 0.0520833333vw;
+    padding: 0.1041666667vw0 0.78125vw 0.1041666667vw0 0.0520833333vw;
+  }
+  nav div button {
+    width: 1.784375vw;
+    height: 1.0036458333vw;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+  nav div button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.36s ease;
+  }
+  nav div button:hover img {
+    transform: translateX(-40%);
+  }
+
+  nav.global {
+    padding: 1.0416666667vw;
+    align-items: flex-end;
+    transform: translateY(-100%);
+    background-color: white;
+  }
+  nav.global div {
+    align-items: center;
+    height: min-content;
+  }
+  nav.global div a.link {
+    margin: 0 2.5vw 0 0;
+    color: black;
+  }
+  nav.global div a.link::after {
+    background-color: #c10021;
+  }
+  nav.global div a.last {
+    margin: 0 1.9270833333vw 0 0;
+    color: black;
+  }
+  nav.global div a.last::after {
+    background-color: #c10021;
+  }
+  nav.global div a.social {
+    margin: 0 1.0416666667vw 0 0;
+  }
+  nav.global div div.language {
+    border-radius: 0.625vw;
+    padding: 0.1041666667vw 0.4166666667vw;
+    margin: 0 2.0833333333vw 0 0;
+  }
+  nav.global div div.language select {
+    font-size: 0.8854166667vw;
+    letter-spacing: 0.0520833333vw;
+    padding: 0.1041666667vw 0.78125vw 0.1041666667vw 0.0520833333vw;
+  }
+  nav.global div button {
+    width: 1.784375vw;
+    height: 1.0036458333vw;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+  nav.global div button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.36s ease;
+  }
+  nav.global div button:hover img {
+    transform: translateX(-40%);
+  }
+
+  .loaded header {
+    background-position-y: -1.875vw;
+  }
+
+  header {
+    height: 100vh;
+    padding: 2.6041666667vw 2.6041666667vw 2.7604166667vw;
+    background-image: url("images/header.png");
+  }
+  header h1 {
+    margin: 1.25vw 0 1.875vw;
+  }
+  header h2 {
+    margin: 0;
+  }
+  header p {
+    font-size: 0.8854166667vw;
+    line-height: 1.40625vw;
+    letter-spacing: 0.0442708333vw;
+  }
+  header button.reg-btn {
+    padding: 0.5372395833vw 2.0145833333vw;
+  }
+
+  section h2 {
+    margin: 1.25vw 0 1.875vw;
+  }
+  section h3 {
+    margin: 0;
+  }
+  section p {
+    font-size: 0.9895833333vw;
+    line-height: 1.40625vw;
+    letter-spacing: 0.0296875vw;
+    margin: 0;
+  }
+  section button.reg-btn {
+    padding: 0.7234375vw 1.3333333333vw;
+  }
+  section button.red {
+    margin-right: 1.0416666667vw;
+  }
+  section .buttonbox {
+    margin-top: 2.9166666667vw;
+  }
+
+  section.about {
+    padding: 0 18.3333333333vw 0 0;
+    justify-content: space-between;
+  }
+  section.about div.left {
+    background-image: url("images/about.png");
+    height: 50.5208333333vw;
+    width: 37.3958333333vw;
+  }
+  section.about div.right {
+    width: 38.8%;
+    align-self: center;
+  }
+
+  section.offer {
+    padding: 8.75vw 12.6041666667vw 0;
+  }
+  section.offer h2 {
+    margin-bottom: 4.1666666667vw;
+  }
+  section.offer .container {
+    justify-content: space-between;
+  }
+  section.offer .container .wrapper .box.first {
+    margin-bottom: 2.9166666667vw;
+  }
+  section.offer .container .wrapper .svgbox {
+    width: 6.8854166667vw;
+    display: flex;
+    justify-content: center;
+    margin-right: 3.3333333333vw;
+  }
+
+  section.rental {
+    padding: 0 13.75vw 0 0;
+  }
+  section.rental div.left {
+    background-image: url("images/rental.png");
+    width: 50vw;
+    height: 50.5208333333vw;
+  }
+  section.rental div.right {
+    align-self: center;
+    width: 42.5%;
+  }
+  section.rental div.right h2 {
+    margin-bottom: 1.6666666667vw;
+  }
+  section.rental div.right div.flex {
+    width: auto;
+    align-items: center;
+    margin-bottom: 2.0833333333vw;
+  }
+  section.rental div.right div.flex svg {
+    margin-right: 0.5208333333vw;
+  }
+  section.rental div.right div.flex h4 {
+    margin: 0;
+  }
+
+  section.quality {
+    padding: 0 0 0 12.5vw;
+  }
+  section.quality div.right {
+    background-image: url("images/quality.png");
+    height: 39.375vw;
+    width: 74.5%;
+  }
+  section.quality div.left {
+    justify-content: center;
+    align-self: center;
+    width: 55.5%;
+  }
+  section.quality div.left h2 {
+    margin-bottom: 0;
+  }
+  section.quality div.left span.line {
+    height: 0.0520833333vw;
+    width: 2.34375vw;
+    background-color: black;
+    display: inline-block;
+    margin: 3.5416666667vw 0 1.4583333333vw;
+  }
+
+  section.features {
+    padding: 8.75vw 12.5vw 9.5833333333vw;
+  }
+  section.features h3 {
+    margin-bottom: 3.5416666667vw;
+  }
+  section.features div.wrapper {
+    justify-content: space-between;
+  }
+  section.features div.column div.flex {
+    align-items: center;
+    margin-bottom: 1.6666666667vw;
+  }
+  section.features div.column div.flex div.svgbox {
+    margin-right: 1.5625vw;
+    width: 2.4609375vw;
+    display: flex;
+    justify-content: center;
+  }
+  section.features div.column div.flex div {
+    align-items: flex-start;
+  }
+  section.features div.column div.flex div.column {
+    margin: 0;
+  }
+  section.features div.bottom {
+    align-items: center;
+    text-align: center;
+    margin-top: 7.5vw;
+  }
+
+  section.summary {
+    padding: 0 12.5vw 6.6666666667vw;
+  }
+  section.summary .wrapper {
+    justify-content: space-between;
+    margin-bottom: 4.5833333333vw;
+  }
+  section.summary .wrapper div {
+    align-items: center;
+    border: 0.0520833333vw solid #F3F4F7;
+    width: fill;
+    box-sizing: border-box;
+    padding: 0 3.3333333333vw;
+  }
+  section.summary .wrapper div svg {
+    margin: 3.3333333333vw 0 1.6666666667vw;
+  }
+  section.summary .wrapper div p {
+    margin-bottom: 2.9166666667vw;
+  }
+  section.summary .bottom {
+    align-items: center;
+  }
+
+  footer {
+    color: white;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+  }
+  footer a, footer p {
+    top: 0.0520833333vw;
+  }
+  footer .wrapper {
+    width: 100%;
+    padding: 1.5677083333vw 6.25vw 2.0052083333vw 2.7604166667vw;
+    justify-content: space-between;
+  }
+  footer .wrapper .flex {
+    align-items: center;
+    height: min-content;
+    align-self: center;
+  }
+  footer .wrapper .flex p {
+    margin: 0;
+  }
+  footer .wrapper .logoBox {
+    position: relative;
+    top: 0.2604166667vw;
+  }
+  footer .wrapper .logoBox svg {
+    margin-right: 1.5625vw;
+  }
+  footer .wrapper .logoBox p {
+    font-weight: bold;
+    margin-bottom: 0.15625vw;
+  }
+  footer .wrapper nav {
+    position: relative;
+    left: 7.15%;
+  }
+  footer .wrapper nav a {
+    margin-left: 2.5vw;
+  }
+  footer .wrapper nav a.first {
+    margin: 0;
+  }
+  footer .wrapper a img {
+    margin-right: 0.5208333333vw;
+    position: relative;
+    top: 0.1041666667vw;
+  }
+  footer .wrapper a svg {
+    margin-left: 0.8333333333vw;
+  }
+  footer .wrapper a.first {
+    margin-right: 2.9166666667vw;
+  }
+  footer .wrapper a.last p {
+    font-weight: normal;
+  }
+  footer .wrapper div.mediabox {
+    margin-left: 5.4166666667vw;
+  }
+  footer .wrapper div.mediabox a.first {
+    margin-right: 2.9166666667vw;
+  }
+  footer a.desktop {
+    align-items: center;
+    height: min-content;
+    align-self: center;
+  }
+  footer a.desktop p {
+    font-weight: 400;
+    margin: 0;
+  }
+  footer a.arrow {
+    position: relative;
+    right: 2.7604166667vw;
+    bottom: -0.2083333333vw;
+    align-items: flex-end;
+    height: min-content;
+    align-self: flex-end;
+  }
+  footer a.arrow button {
+    position: relative;
+    padding: 0;
+    justify-content: center;
+  }
+  footer a.arrow button .arrow, footer a.arrow button .line {
+    position: absolute;
+  }
+  footer a.arrow button .arrow {
+    top: 27%;
+  }
+  footer a.arrow button .line {
+    align-self: center;
+  }
+
+  body.headerless nav:not(footer nav) {
+    padding: 2.6041666667vw 2.6041666667vw 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(0);
+  }
+  body.headerless nav:not(footer nav) a.link, body.headerless nav:not(footer nav) a.last {
+    color: black;
+  }
+  body.headerless section.first {
+    height: 100vh;
+    position: relative;
+    padding-top: 12.1354166667vw;
+  }
+  body.headerless section.first .bridge {
+    justify-content: space-between;
+    position: absolute;
+    bottom: 2.2916666667vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+  }
+  body.headerless footer a {
+    color: white;
+  }
+
+  body.prices nav:not(footer nav) {
+    background-color: white;
+  }
+  body.prices section.prices {
+    padding: 12.2395833333vw 12.5vw 5.625vw;
+    justify-content: space-between;
+  }
+  body.prices section.prices .right {
+    width: 51.48%;
+    padding-top: 2.9166666667vw;
+  }
+  body.prices section.prices .right div span.line {
+    width: 80%;
+  }
+  body.prices section.prices .right div p {
+    font-size: 1.5625vw;
+    line-height: 4.3229166667vw;
+    letter-spacing: 0;
+    text-transform: lowercase;
+  }
+
+  .mapbox {
+    background-image: url("images/map_desktop.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  body.contact nav {
+    background-color: transparent;
+  }
+  body.contact section.contact .container {
+    padding: 0 40vw 0 12.5vw;
+    width: 100%;
+  }
+  body.contact section.contact .container .wrapper {
+    margin-top: 2.5vw;
+    justify-content: space-between;
+  }
+  body.contact section.contact svg {
+    margin-right: 0.8333333333vw;
+  }
+  body.contact section.contact .left div.flex {
+    margin-bottom: 3.75vw;
+  }
+  body.contact section.contact .left div.flex svg {
+    position: relative;
+    top: 0.3645833333vw;
+  }
+  body.contact section.contact .left p.bold {
+    margin-bottom: 0.4166666667vw;
+  }
+  body.contact section.contact .right p.last {
+    margin-top: 2.9166666667vw;
+  }
+  body.contact section.contact .right p.phone {
+    font-size: 2.2916666667vw;
+    line-height: 2.0479166667vw;
+    letter-spacing: 0;
+    align-items: center;
+  }
+  body.contact section.contact .right p.phone svg {
+    position: relative;
+    top: 0.15625vw;
+  }
+  body.contact section.contact .right p.bold {
+    margin-bottom: 0.8333333333vw;
+  }
+  body.contact section.contact .right a.flex {
+    color: black;
+    width: max-content;
+  }
+  body.contact section.contact .right a.first {
+    margin-bottom: 1.0416666667vw;
+  }
+  body.contact section.contact .right a p {
+    position: relative;
+    top: 0.15625vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 1025px) {
+  .desktop {
+    display: none !important;
+  }
+
+  section .flex {
+    flex-direction: column;
+  }
+
+  h1, section h2 {
+    font-size: 22.42px;
+    line-height: 26.91px;
+    letter-spacing: 0.66px;
+    margin: 0;
+  }
+
+  header h2, h3 {
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: 1.32px;
+  }
+
+  header h2 {
+    margin: 0 0 8px;
+  }
+
+  h3 {
+    margin: 0 0 8px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+    margin: 0 0 16px;
+  }
+
+  h5, section.offer h4 {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+
+  section.features h3 {
+    font-size: 22px;
+    line-height: 26.4px;
+    letter-spacing: 1.54px;
+  }
+
+  section.features div.bottom h3 {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.32px;
+    margin: 0 0 8px;
+  }
+
+  section.features div.bottom h2 {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.66px;
+    margin: 0;
+  }
+
+  section.rental h4, section.features h5 {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.48px;
+  }
+
+  button.reg-btn {
+    border-radius: 30px;
+    font-size: 17px;
+    line-height: 20.4px;
+    letter-spacing: 0.85px;
+    padding: 11.3px 39.67px;
+  }
+
+  .loader {
+    height: 100vh;
+    z-index: 10;
+  }
+  .loader div.text {
+    top: 144px;
+    width: 260px;
+  }
+  .loader svg.dot-1, .loader svg.dot-2, .loader svg.dot-3 {
+    bottom: 6%;
+  }
+  .loader svg.dot-1 {
+    right: 5%;
+  }
+  .loader svg.dot-2 {
+    right: 4%;
+  }
+  .loader svg.dot-3 {
+    right: 3%;
+  }
+  .loader img.boat {
+    left: 32px;
+    bottom: 64%;
+    width: 170.679px;
+    animation: boatMobile 2s infinite;
+  }
+  .loader div.container {
+    width: 100%;
+    height: 320px;
+  }
+  .loader img.water {
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+  }
+
+  @keyframes water {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-19.9%);
+    }
+  }
+  @keyframes boatMobile {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  nav.global {
+    padding: 18px 12px;
+    align-items: center;
+  }
+  nav.global a, nav.global button {
+    display: flex;
+  }
+  nav.global a.logolink {
+    transition: 0.36s ease;
+  }
+  nav.global a.logolink img {
+    width: 60.16%;
+  }
+  nav.global button.burger {
+    width: 24.73px;
+    height: 12.55px;
+    padding: 0;
+    position: relative;
+  }
+  nav.global button.burger svg {
+    width: 100%;
+  }
+  nav.global button.burger svg path {
+    transition: 0.36s ease;
+  }
+  nav.global::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.36s ease;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 53px;
+  }
+  nav.global div {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding-top: 64px;
+    box-sizing: content-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.36s ease;
+  }
+  nav.global div a {
+    color: black !important;
+    font-family: "Playfair Display", serif;
+    font-size: 22.42px;
+    line-height: 44.5px;
+    letter-spacing: 0.66px;
+  }
+  nav.global div a.current {
+    color: #CED3DF !important;
+  }
+  nav.global div svg {
+    position: absolute;
+  }
+  nav.global div svg.bg {
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+  }
+  nav.global div svg.boat {
+    bottom: 20%;
+    z-index: 1;
+  }
+  nav.global div.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav.global.on::after {
+    transform: translateY(0);
+  }
+
+  button.burger.invert path {
+    stroke: black;
+  }
+
+  .logolink, .burger {
+    z-index: 10;
+  }
+
+  .burger {
+    position: relative;
+  }
+  .burger svg.xbtn {
+    position: absolute;
+    opacity: 0;
+    transition: 0.36s ease;
+  }
+  .burger svg.xbtn line {
+    stroke: black;
+  }
+
+  .loaded header {
+    background-position-y: -4px;
+  }
+
+  header {
+    background-image: url("images/mobile/header.jpg");
+    height: calc( 100vh - 51px );
+    padding-top: 88px;
+    padding-bottom: 20px;
+    background-size: cover;
+  }
+  header a {
+    margin-top: 18px;
+  }
+  header a.mobile {
+    width: max-content;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+  header a.mobile img {
+    width: 68.57%;
+  }
+
+  section.about {
+    padding-top: 72px;
+    padding-bottom: 56px;
+  }
+  section.about h2, section.about h3, section.about p, section.about .buttonbox {
+    padding-left: 12px;
+  }
+  section.about img.mobile {
+    width: 100%;
+    margin: 18px 0 24px;
+  }
+  section.about p {
+    margin: 0;
+    padding-right: 56px;
+  }
+  section.about .buttonbox {
+    margin: 24px 0 0;
+    width: max-content;
+  }
+  section.about .buttonbox button {
+    flex-direction: row;
+    position: relative;
+    padding: 11.3px 25.6px;
+    border: 1px solid #c10021;
+  }
+  section.about .buttonbox button div {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  section.offer {
+    padding-left: 12px;
+    padding-bottom: 56px;
+    padding-right: 16px;
+  }
+  section.offer div.container {
+    margin: 16px 0 0;
+  }
+  section.offer div.container div.wrapper div.box {
+    flex-direction: row;
+    margin-bottom: 16px;
+  }
+  section.offer div.container div.wrapper div.box div.svgbox {
+    width: 155.4px;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    position: relative;
+    top: 9px;
+    margin-right: 14px;
+  }
+  section.offer div.container div.wrapper div.box div:last-child h4 {
+    margin: 0 0 10px;
+  }
+  section.offer div.container div.wrapper div.box div:last-child p {
+    margin: 0;
+  }
+  section.offer div.container div.wrapper div.box p.first-p {
+    width: 89%;
+  }
+  section.offer div.container div.wrapper div.box p.second-p {
+    width: 95%;
+  }
+
+  section.rental {
+    padding-left: 12px;
+    padding-bottom: 148px;
+    background-image: url(../projekt/mobile/rental.png);
+    background-position-x: 37%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+  }
+  section.rental h2 {
+    margin-bottom: 13.5px;
+  }
+  section.rental div.flex {
+    flex-direction: row;
+    align-items: center;
+  }
+  section.rental div.flex h4 {
+    margin: 0;
+  }
+  section.rental div.flex svg {
+    margin-right: 10px;
+  }
+  section.rental div.right p {
+    width: 66%;
+  }
+  section.rental button {
+    padding: 11.3px 23.42px;
+  }
+
+  section.quality {
+    padding-top: 24px;
+    padding-bottom: 56px;
+    flex-direction: column;
+  }
+  section.quality h2, section.quality h3, section.quality p {
+    padding-left: 12px;
+  }
+  section.quality img {
+    margin: 24px 0;
+    width: 100%;
+  }
+  section.quality p {
+    margin: 0;
+  }
+
+  section.features h3 {
+    margin: 0 0 30px;
+    padding-left: 12px;
+  }
+  section.features div.wrapper {
+    padding-right: 16px;
+    padding-left: 12px;
+    padding-bottom: 56px;
+  }
+  section.features div.wrapper div.flex.column div.flex {
+    flex-direction: row;
+    margin-bottom: 24px;
+  }
+  section.features div.wrapper div.flex.column div.flex div.svgbox {
+    height: max-content;
+    align-self: center;
+    margin-right: 14px;
+    width: 45.26px;
+    justify-content: center;
+    display: flex;
+  }
+  section.features div.wrapper div.flex.column div.flex div.column {
+    flex-direction: column;
+    margin: 0;
+  }
+  section.features div.wrapper div.flex.column div.flex p {
+    margin: 0;
+  }
+  section.features div.wrapper div.flex.column div.flex h5 {
+    height: max-content;
+    align-self: center;
+  }
+  section.features div.wrapper div.flex.column div.flex h5.excluded {
+    align-self: flex-start;
+  }
+  section.features div.wrapper div.flex.column div.flex.last {
+    margin-bottom: 0;
+  }
+  section.features div.bottom.mobile {
+    background-image: url(images/mobile/follow.jpg);
+    height: 322.31px;
+    width: 100%;
+    padding: 24px 12px 30px;
+    color: white;
+    background-size: cover;
+    background-position-x: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+  }
+  section.features div.bottom.mobile button {
+    color: white;
+    border: 1px solid white;
+  }
+
+  section.summary {
+    padding: 30px 12px 76px;
+  }
+  section.summary div.wrapper div.column {
+    align-items: center;
+    padding: 60px 0;
+    margin-bottom: 12px;
+    border: 1px solid #F3F4F7;
+  }
+  section.summary div.wrapper div.column h4 {
+    margin: 32px 0 16px;
+  }
+  section.summary div.wrapper div.column p {
+    margin: 0;
+  }
+  section.summary div.bottom {
+    text-align: center;
+  }
+  section.summary div.bottom div.buttonbox {
+    margin-top: 24px;
+  }
+  section.summary div.bottom div.buttonbox button {
+    width: 100%;
+    padding: 11.3px 0;
+  }
+  section.summary div.bottom div.buttonbox button.red {
+    margin-bottom: 12px;
+  }
+
+  footer {
+    background-color: black;
+    flex-direction: column;
+    padding: 24px 12px 12px;
+    position: relative;
+    align-items: center;
+  }
+  footer div.wrapper {
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+  }
+  footer div.wrapper nav {
+    margin-bottom: 64px;
+  }
+  footer div.wrapper a {
+    font-size: 17px;
+    line-height: 20.4px;
+    letter-spacing: 0.85px;
+  }
+  footer div.wrapper div.mediabox {
+    flex-direction: column;
+    margin-bottom: 72px;
+  }
+  footer div.wrapper div.mediabox a {
+    align-items: center;
+  }
+  footer div.wrapper div.mediabox a.first {
+    margin-bottom: 24px;
+  }
+  footer div.wrapper div.mediabox img {
+    margin-right: 12px;
+  }
+  footer div.wrapper div.mediabox p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer div.wrapper div.bridge {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 144px;
+  }
+  footer div.wrapper div.bridge p {
+    color: white;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    margin: 0;
+  }
+  footer div.wrapper div.bridge p span {
+    font-weight: normal;
+  }
+  footer div.wrapper div.bridge p.last {
+    text-align: right;
+  }
+  footer div.wrapper div.bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer div.wrapper div.bottom p, footer div.wrapper div.bottom a {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+  }
+  footer div.wrapper div.bottom a {
+    display: flex;
+    align-items: center;
+  }
+  footer div.wrapper div.bottom a p {
+    font-weight: bold;
+  }
+  footer div.wrapper div.bottom a p span {
+    font-weight: 400;
+  }
+  footer div.wrapper div.bottom a svg {
+    margin-left: 12px;
+  }
+  footer a.arrow {
+    position: absolute;
+    bottom: 0;
+  }
+  footer a.arrow button {
+    width: 46px;
+    height: 87px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  footer a.arrow button svg {
+    position: absolute;
+  }
+  footer a.arrow button svg.arrow, footer a.arrow button svg.line {
+    z-index: 2;
+    top: 25px;
+  }
+  footer svg.boat {
+    bottom: 30px;
+    left: 0;
+    position: absolute;
+  }
+
+  body.headerless nav.global button path {
+    stroke: black;
+  }
+  body.headerless nav a {
+    color: white;
+  }
+  body.headerless section h3 {
+    font-weight: 400;
+  }
+
+  body.prices nav.global {
+    background-color: white;
+  }
+  body.prices section.prices {
+    flex-direction: column;
+    padding: 64px 0 0;
+  }
+  body.prices section.prices h2, body.prices section.prices h3, body.prices section.prices div.right, body.prices section.prices div.box, body.prices section.prices div.bottom {
+    padding: 0 12px 0;
+  }
+  body.prices section.prices h2 {
+    margin-bottom: 32px;
+  }
+  body.prices section.prices .right div.flex {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body.prices section.prices .right div.flex span.line {
+    width: 73.14%;
+  }
+  body.prices section.prices div.box {
+    align-items: center;
+    text-align: center;
+    margin-top: 24px;
+  }
+  body.prices section.prices div.box p {
+    margin: 0;
+  }
+  body.prices section.prices div.box a {
+    margin-top: 24px;
+  }
+  body.prices section.prices div.bottom {
+    background-image: url(../projekt/mobile/offer.png);
+    height: 322.31px;
+    width: 100%;
+    padding: 24px 12px 30px;
+    color: white;
+    background-size: cover;
+    background-position-x: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+  }
+  body.prices section.prices div.bottom button {
+    color: white;
+    border: 1px solid white;
+  }
+  body.prices section.prices div.bottom h3 {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.32px;
+    margin: 0 0 8px;
+  }
+  body.prices section.prices div.bottom h2 {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.66px;
+    margin: 0;
+  }
+
+  body.contact nav.global {
+    background: white;
+  }
+  body.contact section.contact {
+    padding: 64px 12px 60px;
+    background-image: url("images/mobile/contact.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body.contact section.contact p.bold {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.48px;
+  }
+  body.contact section.contact div.left div.flex {
+    flex-direction: row;
+  }
+  body.contact section.contact div.left div.flex svg {
+    position: relative;
+    top: 4px;
+  }
+  body.contact section.contact div.left div.flex p {
+    margin: 0 0 0 16px;
+  }
+  body.contact section.contact div.right p.bold {
+    margin: 48px 0 10px;
+  }
+  body.contact section.contact div.right p.bold.last {
+    margin: 40px 0 16px;
+  }
+  body.contact section.contact div.right p.phone {
+    flex-direction: row;
+    font-size: 22px;
+    line-height: 39.32px;
+    align-items: center;
+    margin: 0;
+  }
+  body.contact section.contact div.right p.phone svg {
+    margin-right: 20px;
+  }
+  body.contact section.contact div.right p.phone svg path {
+    stroke: #c10021;
+  }
+  body.contact section.contact div.right a.flex {
+    flex-direction: row;
+    align-items: center;
+    color: black;
+  }
+  body.contact section.contact div.right a.flex svg {
+    margin-right: 16px;
+  }
+  body.contact section.contact div.right img {
+    width: 59.46%;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

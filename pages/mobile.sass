@@ -1,0 +1,1875 @@
+// VARIABLES //
+
+
+// Breakpoints //
+
+$breakpoint-phone: 320px
+$breakpoint-tablet: 768px
+$breakpoint-desktopSmall: 1025px
+$breakpoint-desktop: 1700px
+
+
+// Colors
+
+$red: rgba(193, 0, 33, 1)
+
+
+@media (min-width: $breakpoint-desktop)
+
+    .mobile
+        display: none
+
+    nav a.link, button.reg-btn, footer a, footer a p, footer p
+        font-size: 17px
+        line-height: 20.4px
+        letter-spacing: .85px
+
+
+    h1
+        font-size: 92px
+        line-height: 110.4px
+        letter-spacing: 2.76px
+
+    
+    header h2
+        font-size: 30px
+        line-height: 36px
+        letter-spacing: 2.1px
+
+
+    section h2
+        font-size: 68px
+        line-height: 81.6px
+        letter-spacing: 2.54px
+
+    h3
+        font-size: 30px
+        line-height: 36px
+        letter-spacing: 2.1px
+
+    h4
+        font-size: 30px
+        line-height: 27px
+        letter-spacing: 0.9px
+        margin: 0 0 16px
+
+    h5 
+        font-size: 19px
+        line-height: 30px
+        letter-spacing: 0px
+        margin: 0
+
+
+    button.reg-btn
+        border-radius: 30px
+
+    
+    // Loader
+
+
+    .loader
+      height: 100vh
+      z-index: 10
+      & div.text
+        top: 30%
+      & svg.dot-1, svg.dot-2, svg.dot-3
+        bottom: 7px
+      & svg.dot-1
+        right: 15px
+      & svg.dot-2
+        right: 8px
+      & svg.dot-3
+        right: 1px
+  
+      & img.boat
+        bottom: 70%
+        animation: boatDesktop 2s infinite
+        left: 37.75%
+  
+
+
+    @keyframes boatDesktop
+      0%
+        transform: translateY(0)
+      50%
+        transform: translateY(-11px)
+      100%
+        transform: translateY(0)
+
+
+    @keyframes water
+      0%
+        transform: translateX(0)
+      100%
+        transform: translateX(-18.2%)
+
+
+
+    // Nav //
+
+    nav
+        & div
+            position: relative
+            bottom: 8px
+            & a.link
+                margin: 0 48px 0 0
+            & a.last
+                margin: 0 37px 0 0
+            & a.social
+                margin: 0 20px 0 0
+            & div.language
+                border-radius: 12px
+                padding: 2px 8px
+                margin: 0 40px 0 0
+                & select
+                    font-size: 17px
+                    letter-spacing: 1px
+                    padding: 2px 15px 2px 1px
+            & button
+                width: 34.26px
+                height: 19.27px
+                overflow: hidden
+                padding: 0
+                position: relative
+                & img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    transition: .36s ease
+                &:hover
+                    & img
+                        transform: translateX(-40%)
+
+
+    nav.global
+        padding: 20px
+        align-items: flex-end
+        transform: translateY(-100%)
+        background-color: white
+        & div
+            align-items: center
+            height: min-content
+            & a.link
+                margin: 0 48px 0 0
+                color: black
+                &::after
+                    background-color: $red
+            & a.last
+                margin: 0 37px 0 0
+                color: black
+                &::after
+                    background-color: $red
+            & a.social
+                margin: 0 20px 0 0
+            & div.language
+                border-radius: 12px
+                padding: 2px 8px
+                margin: 0 40px 0 0
+                & select
+                    font-size: 17px
+                    letter-spacing: 1px
+                    padding: 2px 15px 2px 1px
+            & button
+                width: 34.26px
+                height: 19.27px
+                overflow: hidden
+                padding: 0
+                position: relative
+                & img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    transition: .36s ease
+                &:hover
+                    & img
+                        transform: translateX(-40%)
+
+
+    // Header //
+
+    .loaded header
+        background-position-y: -32px
+
+
+    header
+        height: 100vh
+        padding: 50px 50px 53px
+        background-image: url('images/header.png')
+        & h1
+            margin: 24px 0 36px
+        & h2
+            margin: 0
+        & p
+            font-size: 17px
+            line-height: 27px
+            letter-spacing: 0.85px
+        & button.reg-btn
+            padding: 10.315px 38.68px
+    
+
+    // Section // 
+
+
+    section
+        & h2
+            margin: 24px 0 36px
+        & h3
+            margin: 0
+        & p
+            font-size: 19px
+            line-height: 27px
+            letter-spacing: 0.57px
+            margin: 0
+        & button.reg-btn
+            padding: 13.89px 25.6px
+        & button.red
+            margin-right: 20px
+        & .buttonbox
+            margin-top: 56px
+
+
+    // About
+
+    
+    section.about
+        padding: 0 352px 0 0
+        justify-content: space-between
+        & div.left
+            background-image: url('images/about.png')
+            height: 970px
+            width: 718px
+        & div.right
+            width: 38.8%
+            align-self: center
+
+
+
+    // Offer
+
+
+    section.offer
+        padding: 168px 242px 0
+        & h2
+            margin-bottom: 80px
+        & .container
+            justify-content: space-between
+            & .wrapper
+                & .box.first
+                    margin-bottom: 56px
+                & .svgbox
+                    width: 132.2px
+                    display: flex
+                    justify-content: center
+                    margin-right: 64px
+
+
+
+
+
+    // Rental
+
+
+    section.rental
+        padding: 0 264px 0 0
+        & div.left
+            background-image: url('images/rental.png')
+            width: 960px
+            height: 970px
+        & div.right
+            align-self: center
+            width: 42.5%
+            & h2
+                margin-bottom: 32px
+            & div.flex
+                width: auto
+                align-items: center
+                margin-bottom: 40px
+                & svg
+                    margin-right: 10px
+                & h4
+                    margin: 0
+
+
+
+    // Quality
+
+    section.quality
+        padding: 0 0 0 240px
+        & div.right
+            background-image: url('images/quality.png')
+            height: 756px
+            width: 74.5%
+        & div.left
+            justify-content: center
+            align-self: center
+            width: 55.5%
+            & h2
+                margin-bottom: 0
+            & span.line
+                height: 1px
+                width: 45px
+                background-color: black
+                display: inline-block
+                margin: 68px 0 28px
+
+
+
+    // Features
+
+
+    section.features
+        padding: 168px 240px 184px
+        & h3
+            margin-bottom: 68px
+        & div.wrapper
+            justify-content: space-between
+        & div.column
+            & div.flex
+                align-items: center
+                margin-bottom: 32px
+                & div.svgbox
+                    margin-right: 30px
+                    width: 47.25px
+                    display: flex
+                    justify-content: center
+                & div
+                    align-items: flex-start
+                & div.column
+                    margin: 0
+        & div.bottom
+            align-items: center
+            text-align: center
+            margin-top: 144px
+
+
+    // Summary //
+
+
+    section.summary
+        padding: 0 240px 128px
+        & .wrapper
+            justify-content: space-between
+            margin-bottom: 88px
+            & div
+                align-items: center
+                border: 1px solid #F3F4F7
+                width: fill
+                box-sizing: border-box
+                // padding: 68px 64px 88px
+                padding: 0 64px
+                & svg
+                    margin: 64px 0 32px
+                & p
+                    margin-bottom: 56px
+        & .bottom
+            align-items: center
+
+
+    
+
+    // Footer
+
+
+    // footer
+    //     color: white
+    //     background-color: black
+    //     position: relative
+    //     & .wrapper
+    //         width: 100%
+    //         padding: 38.5px 116px 38.5px 48px
+    //         justify-content: space-between
+    //         & .flex
+    //             align-items: center
+    //             height: min-content
+    //             align-self: center
+    //             & p
+    //                 margin: 0
+    //         & .logoBox
+    //             & img
+    //                 margin-right: 30px
+    //             & p
+    //                 font-weight: bold
+    //         & nav
+    //             & a
+    //                 margin-left: 48px
+    //         & a
+    //             & img
+    //                 margin-right: 12px
+    //             & svg
+    //                 margin-left: 12px
+    //         & a.first
+    //             margin-right: 56px
+    //         & a.last
+    //             & p
+    //                 font-weight: normal
+    //     & a.arrow
+    //         position: relative
+    //         right: 50px
+    //         bottom: 0
+    //         align-items: flex-end
+    //         height: min-content
+    //         align-self: flex-end
+    //         & button
+    //             position: relative
+    //             padding: 0
+    //             justify-content: center
+    //             & .arrow, .line
+    //                 position: absolute
+    //             & .arrow
+    //                 top: 28%
+    //             & .line
+    //                 align-self: center
+
+
+    footer
+        color: white
+        background-color: black
+        position: relative
+        overflow: hidden
+        & a, p
+            top: 1px
+        & .wrapper
+            width: 100%
+            padding: 30.1px 120px 38.5px 53px
+            justify-content: space-between
+            & .flex
+                align-items: center
+                height: min-content
+                align-self: center
+                & p
+                    margin: 0
+            & .logoBox
+                position: relative
+                top: 5px
+                & svg
+                    margin-right: 30px
+                & p
+                    font-weight: bold
+                    margin-bottom: 3px
+            & nav
+                position: relative
+                left: 7.15%
+                & a
+                    margin-left: 48px
+                & a.first
+                    margin: 0
+            & a
+                & img
+                    margin-right: 10px
+                    position: relative
+                    top: 2px
+                & svg
+                    margin-left: 16px
+            // & a.media
+            //     margin-bottom: 6px
+            & a.first
+                margin-right: 56px
+            & a.last
+                & p
+                    font-weight: normal
+            & div.mediabox
+                margin-left: 104px
+                a.first
+                    margin-right: 56px
+        & a.desktop
+            align-items: center
+            height: min-content
+            align-self: center
+            & p
+                font-weight: 400
+                margin: 0
+        & a.arrow
+            position: relative
+            right: 53px
+            bottom: -4px
+            align-items: flex-end
+            height: min-content
+            align-self: flex-end
+            & button
+                position: relative
+                padding: 0
+                justify-content: center
+                & .arrow, .line
+                    position: absolute
+                & .arrow
+                    top: 27%
+                & .line
+                    align-self: center
+            
+            
+    
+    
+    // Headerless
+
+
+
+    body.headerless
+        & nav:not(footer nav)
+            padding: 50px 50px 0
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            transform: translateY(0)
+            & a.link, a.last
+                color: black
+        & section.first
+            height: 100vh
+            position: relative
+            padding-top: 223px
+            & .bridge
+                justify-content: space-between
+                position: absolute
+                bottom: 44px
+                left: 0
+                right: 0
+                margin: auto
+                width: 95%
+        & footer
+            & a
+                color: white
+
+
+
+
+    // Prices
+
+
+
+    body.prices
+        & nav:not(footer nav)
+            background-color: white
+        & section.prices
+            padding: 235px 240px 108px
+            justify-content: space-between
+            & .right
+                width: 51.48%
+                padding-top: 56px
+                & div
+                    & span.line
+                        width: 80%
+                    & p
+                        font-size: 30px
+                        line-height: 83px
+                        letter-spacing: 0
+                        text-transform: lowercase
+
+
+
+
+    // Contact
+
+
+
+    .mapbox
+        background-image: url('images/map_desktop.png')
+        background-repeat: no-repeat
+        background-position: right
+
+
+
+    body.contact
+        & nav
+            background-color: transparent
+        & section.contact
+            & .container
+                padding: 0 768px 0 240px
+                width: 100%
+                & .wrapper
+                    margin-top: 48px
+                    justify-content: space-between
+            & svg
+                margin-right: 16px
+            & .left
+                & div.flex
+                    margin-bottom: 72px
+                    & svg
+                        position: relative
+                        top: 7px
+                & p.bold
+                    margin-bottom: 8px
+            & .right
+                & p.last
+                    margin-top: 56px
+                & p.phone
+                    font-size: 44px
+                    line-height: 39.32px
+                    letter-spacing: 0
+                    align-items: center
+                    & svg
+                        position: relative
+                        top: 3px
+                & p.bold
+                    margin-bottom: 16px
+                & a.flex
+                    color: black
+                    width: max-content
+                & a.first
+                    margin-bottom: 20px
+                & a
+                    & p
+                        position: relative
+                        top: 3px
+
+
+
+@media (min-width: $breakpoint-desktopSmall) and (max-width: $breakpoint-desktop)
+
+ 
+    .mobile
+        display: none
+
+    nav a.link, button.reg-btn, footer a, footer a p, footer p
+        font-size: 0.8854166666666666vw
+        line-height: 1.0624999999999998vw
+        letter-spacing: 0.044270833333333336vw
+
+
+    h1
+        font-size:4.791666666666667vw
+        line-height: 5.75vw
+        letter-spacing:0.14375vw
+
+    
+    header h2
+        font-size:1.5625vw
+        line-height:1.875vw
+        letter-spacing:0.109375vw
+
+
+    section h2
+        font-size:3.5416666666666665vw
+        line-height: 4.249999999999999vw
+        letter-spacing: 0.13229166666666667vw
+
+    h3
+        font-size:1.5625vw
+        line-height:1.875vw
+        letter-spacing:0.109375vw
+
+    h4
+        font-size:1.5625vw
+        line-height:1.40625vw
+        letter-spacing: 0.046875vw
+        margin: 0 0 0.8333333333333334vw
+
+    h5 
+        font-size:0.9895833333333334vw
+        line-height:1.5625vw
+        letter-spacing: 0px
+        margin: 0
+
+
+    button.reg-btn
+        border-radius:1.5625vw
+
+    
+    // Loader
+
+
+    .loader
+      height: 100vh
+      z-index: 10
+      & div.text
+        top: 30%
+      & svg.dot-1, svg.dot-2, svg.dot-3
+        bottom:0.3645833333333333vw
+      & svg.dot-1
+        right:0.78125vw
+      & svg.dot-2
+        right:0.4166666666666667vw
+      & svg.dot-3
+        right:0.052083333333333336vw
+  
+      & img.boat
+        bottom: 70%
+        animation: boatDesktop 2s infinite
+        left: 37.75%
+  
+
+
+    @keyframes boatDesktop
+      0%
+        transform: translateY(0)
+      50%
+        transform: translateY(-11px)
+      100%
+        transform: translateY(0)
+
+
+    
+    @keyframes water
+      0%
+        transform: translateX(0)
+      100%
+        transform: translateX(-18.2%)
+
+
+
+
+    // Nav //
+
+    nav
+        & div
+            position: relative
+            bottom:0.4166666666666667vw
+            & a.link
+                margin: 0 2.5vw 0 0
+            & a.last
+                margin: 0 1.9270833333333333vw 0 0
+            & a.social
+                margin: 0 1.0416666666666667vw 0 0
+            & div.language
+                border-radius: 0.625vw
+                padding: 0.10416666666666667vw 0.4166666666666667vw
+                margin: 0 2.0833333333333335vw 0 0
+                & select
+                    font-size:0.8854166666666666vw
+                    letter-spacing:0.052083333333333336vw
+                    padding: 0.10416666666666667vw0.78125vw 0.10416666666666667vw0.052083333333333336vw
+            & button
+                width: 1.784375vw
+                height: 1.0036458333333333vw
+                overflow: hidden
+                padding: 0
+                position: relative
+                & img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    transition: .36s ease
+                &:hover
+                    & img
+                        transform: translateX(-40%)
+
+
+    nav.global
+        padding: 1.0416666666666667vw
+        align-items: flex-end
+        transform: translateY(-100%)
+        background-color: white
+        & div
+            align-items: center
+            height: min-content
+            & a.link
+                margin:0 2.5vw 0 0
+                color: black
+                &::after
+                    background-color: $red
+            & a.last
+                margin: 0 1.9270833333333333vw 0 0
+                color: black
+                &::after
+                    background-color: $red
+            & a.social
+                margin: 0 1.0416666666666667vw 0 0
+            & div.language
+                border-radius: 0.625vw
+                padding: 0.10416666666666667vw 0.4166666666666667vw
+                margin: 0 2.0833333333333335vw 0 0
+                & select
+                    font-size:0.8854166666666666vw
+                    letter-spacing:0.052083333333333336vw
+                    padding: 0.10416666666666667vw 0.78125vw 0.10416666666666667vw 0.052083333333333336vw
+            & button
+                width: 1.784375vw
+                height: 1.0036458333333333vw
+                overflow: hidden
+                padding: 0
+                position: relative
+                & img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    transition: .36s ease
+                &:hover
+                    & img
+                        transform: translateX(-40%)
+
+
+    // Header //
+
+
+    .loaded header
+        background-position-y: -1.875vw
+
+
+    header
+        height: 100vh
+        padding: 2.6041666666666665vw 2.6041666666666665vw 2.7604166666666665vw
+        background-image: url('images/header.png')
+        & h1
+            margin: 1.25vw 0 1.875vw
+        & h2
+            margin: 0
+        & p
+            font-size:0.8854166666666666vw
+            line-height:1.40625vw
+            letter-spacing: 0.044270833333333336vw
+        & button.reg-btn
+            padding: 0.5372395833333333vw 2.0145833333333334vw
+    
+
+    // Section // 
+
+
+    section
+        & h2
+            margin: 1.25vw 0 1.875vw
+        & h3
+            margin: 0
+        & p
+            font-size:0.9895833333333334vw
+            line-height:1.40625vw
+            letter-spacing: 0.029687499999999995vw
+            margin: 0
+        & button.reg-btn
+            padding: 0.7234375vw 1.3333333333333333vw
+        & button.red
+            margin-right: 1.0416666666666667vw
+        & .buttonbox
+            margin-top: 2.9166666666666665vw
+
+
+    // About
+
+    
+    section.about
+        padding: 0 18.333333333333332vw 0 0
+        justify-content: space-between
+        & div.left
+            background-image: url('images/about.png')
+            height: 50.520833333333336vw
+            width: 37.395833333333336vw
+        & div.right
+            width: 38.8%
+            align-self: center
+
+
+
+    // Offer
+
+
+    section.offer
+        padding: 8.75vw 12.604166666666666vw 0
+        & h2
+            margin-bottom: 4.166666666666667vw
+        & .container
+            justify-content: space-between
+            & .wrapper
+                & .box.first
+                    margin-bottom: 2.9166666666666665vw
+                & .svgbox
+                    width: 6.885416666666666vw
+                    display: flex
+                    justify-content: center
+                    margin-right: 3.3333333333333335vw
+
+
+
+
+
+    // Rental
+
+
+    section.rental
+        padding: 0 13.75vw 0 0
+        & div.left
+            background-image: url('images/rental.png')
+            width: 50vw
+            height: 50.520833333333336vw
+        & div.right
+            align-self: center
+            width: 42.5%
+            & h2
+                margin-bottom: 1.6666666666666667vw
+            & div.flex
+                width: auto
+                align-items: center
+                margin-bottom: 2.0833333333333335vw
+                & svg
+                    margin-right: 0.5208333333333334vw
+                & h4
+                    margin: 0
+
+
+
+    // Quality
+
+    section.quality
+        padding: 0 0 0 12.5vw
+        & div.right
+            background-image: url('images/quality.png')
+            height: 39.375vw
+            width: 74.5%
+        & div.left
+            justify-content: center
+            align-self: center
+            width: 55.5%
+            & h2
+                margin-bottom: 0
+            & span.line
+                height:0.052083333333333336vw
+                width: 2.34375vw
+                background-color: black
+                display: inline-block
+                margin:3.5416666666666665vw 0 1.4583333333333333vw
+
+
+
+    // Features
+
+
+    section.features
+        padding: 8.75vw 12.5vw 9.583333333333334vw
+        & h3
+            margin-bottom:3.5416666666666665vw
+        & div.wrapper
+            justify-content: space-between
+        & div.column
+            & div.flex
+                align-items: center
+                margin-bottom: 1.6666666666666667vw
+                & div.svgbox
+                    margin-right:1.5625vw
+                    width: 2.4609375vw
+                    display: flex
+                    justify-content: center
+                & div
+                    align-items: flex-start
+                & div.column
+                    margin: 0
+        & div.bottom
+            align-items: center
+            text-align: center
+            margin-top: 7.5vw
+
+
+    // Summary //
+
+
+    section.summary
+        padding: 0 12.5vw 6.666666666666667vw
+        & .wrapper
+            justify-content: space-between
+            margin-bottom: 4.583333333333333vw
+            & div
+                align-items: center
+                border:0.052083333333333336vw solid #F3F4F7
+                width: fill
+                box-sizing: border-box
+                // padding:3.5416666666666665vw 3.3333333333333335vw 4.583333333333333vw
+                padding: 0 3.3333333333333335vw
+                & svg
+                    margin: 3.3333333333333335vw 0 1.6666666666666667vw
+                & p
+                    margin-bottom: 2.9166666666666665vw
+        & .bottom
+            align-items: center
+
+
+    
+
+    // Footer
+
+
+    // footer
+    //     color: white
+    //     background-color: black
+    //     position: relative
+    //     & .wrapper
+    //         width: 100%
+    //         padding: 38.5px 116px 38.5px2.5vw
+    //         justify-content: space-between
+    //         & .flex
+    //             align-items: center
+    //             height: min-content
+    //             align-self: center
+    //             & p
+    //                 margin: 0
+    //         & .logoBox
+    //             & img
+    //                 margin-right:1.5625vw
+    //             & p
+    //                 font-weight: bold
+    //         & nav
+    //             & a
+    //                 margin-left:2.5vw
+    //         & a
+    //             & img
+    //                 margin-right: 0.625vw
+    //             & svg
+    //                 margin-left: 0.625vw
+    //         & a.first
+    //             margin-right: 2.9166666666666665vw
+    //         & a.last
+    //             & p
+    //                 font-weight: normal
+    //     & a.arrow
+    //         position: relative
+    //         right: 2.6041666666666665vw
+    //         bottom: 0
+    //         align-items: flex-end
+    //         height: min-content
+    //         align-self: flex-end
+    //         & button
+    //             position: relative
+    //             padding: 0
+    //             justify-content: center
+    //             & .arrow, .line
+    //                 position: absolute
+    //             & .arrow
+    //                 top: 28%
+    //             & .line
+    //                 align-self: center
+
+
+    footer
+        color: white
+        background-color: black
+        position: relative
+        overflow: hidden
+        & a, p
+            top:0.052083333333333336vw
+        & .wrapper
+            width: 100%
+            padding:1.5677083333333333vw 6.25vw 2.0052083333333335vw 2.7604166666666665vw
+            justify-content: space-between
+            & .flex
+                align-items: center
+                height: min-content
+                align-self: center
+                & p
+                    margin: 0
+            & .logoBox
+                position: relative
+                top: 0.2604166666666667vw
+                & svg
+                    margin-right:1.5625vw
+                & p
+                    font-weight: bold
+                    margin-bottom: 0.15625vw
+            & nav
+                position: relative
+                left: 7.15%
+                & a
+                    margin-left:2.5vw
+                & a.first
+                    margin: 0
+            & a
+                & img
+                    margin-right: 0.5208333333333334vw
+                    position: relative
+                    top: 0.10416666666666667vw
+                & svg
+                    margin-left:0.8333333333333334vw
+            // & a.media
+            //     margin-bottom: 6px
+            & a.first
+                margin-right: 2.9166666666666665vw
+            & a.last
+                & p
+                    font-weight: normal
+            & div.mediabox
+                margin-left: 5.416666666666667vw
+                a.first
+                    margin-right: 2.9166666666666665vw
+        & a.desktop
+            align-items: center
+            height: min-content
+            align-self: center
+            & p
+                font-weight: 400
+                margin: 0
+        & a.arrow
+            position: relative
+            right: 2.7604166666666665vw
+            bottom: -0.20833333333333334vw
+            align-items: flex-end
+            height: min-content
+            align-self: flex-end
+            & button
+                position: relative
+                padding: 0
+                justify-content: center
+                & .arrow, .line
+                    position: absolute
+                & .arrow
+                    top: 27%
+                & .line
+                    align-self: center
+            
+            
+    
+    
+    // Headerless
+
+
+
+    body.headerless
+        & nav:not(footer nav)
+            padding: 2.6041666666666665vw 2.6041666666666665vw 0
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            transform: translateY(0)
+            & a.link, a.last
+                color: black
+        & section.first
+            height: 100vh
+            position: relative
+            padding-top: 12.135416666666666vw
+            & .bridge
+                justify-content: space-between
+                position: absolute
+                bottom: 2.2916666666666665vw
+                left: 0
+                right: 0
+                margin: auto
+                width: 95%
+        & footer
+            & a
+                color: white
+
+
+
+
+    // Prices
+
+
+
+    body.prices
+        & nav:not(footer nav)
+            background-color: white
+        & section.prices
+            padding: 12.239583333333334vw 12.5vw 5.625vw
+            justify-content: space-between
+            & .right
+                width: 51.48%
+                padding-top: 2.9166666666666665vw
+                & div
+                    & span.line
+                        width: 80%
+                    & p
+                        font-size:1.5625vw
+                        line-height: 4.322916666666667vw
+                        letter-spacing: 0
+                        text-transform: lowercase
+
+
+
+
+    // Contact
+
+
+
+    .mapbox
+        background-image: url('images/map_desktop.png')
+        background-repeat: no-repeat
+        background-position: right
+
+
+
+    body.contact
+        & nav
+            background-color: transparent
+        & section.contact
+            & .container
+                padding: 0 40vw 0 12.5vw
+                width: 100%
+                & .wrapper
+                    margin-top:2.5vw
+                    justify-content: space-between
+            & svg
+                margin-right:0.8333333333333334vw
+            & .left
+                & div.flex
+                    margin-bottom: 3.75vw
+                    & svg
+                        position: relative
+                        top:0.3645833333333333vw
+                & p.bold
+                    margin-bottom:0.4166666666666667vw
+            & .right
+                & p.last
+                    margin-top: 2.9166666666666665vw
+                & p.phone
+                    font-size: 2.2916666666666665vw
+                    line-height: 2.0479166666666666vw
+                    letter-spacing: 0
+                    align-items: center
+                    & svg
+                        position: relative
+                        top: 0.15625vw
+                & p.bold
+                    margin-bottom:0.8333333333333334vw
+                & a.flex
+                    color: black
+                    width: max-content
+                & a.first
+                    margin-bottom: 1.0416666666666667vw
+                & a
+                    & p
+                        position: relative
+                        top: 0.15625vw
+
+
+
+
+@media (min-width: $breakpoint-phone) and (max-width: $breakpoint-desktopSmall)
+
+
+
+    .desktop
+        display: none !important
+
+    section .flex
+        flex-direction: column
+
+    h1, section h2
+        font-size: 22.42px
+        line-height: 26.91px
+        letter-spacing: 0.66px
+        margin: 0
+
+    
+    header h2, h3
+        font-size: 12px
+        line-height: 14.4px
+        letter-spacing: 1.32px
+
+    
+    header h2
+        margin: 0 0 8px
+
+    
+    h3
+        margin: 0 0 8px
+
+
+    h4
+        font-size: 30px
+        line-height: 27px
+        letter-spacing: 0.9px
+        margin: 0 0 16px
+
+    h5, section.offer h4
+        font-size: 19px
+        line-height: 30px
+        letter-spacing: 0px
+        margin: 0
+
+
+    section.features h3
+        font-size: 22px
+        line-height: 26.4px
+        letter-spacing: 1.54px
+
+
+    section.features div.bottom h3
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 1.32px
+        margin: 0 0 8px
+
+    section.features div.bottom h2
+        font-size: 22px
+        line-height: 27px
+        letter-spacing: 0.66px
+        margin: 0
+
+    section.rental h4, section.features h5
+        font-size: 16px
+        line-height: 27px
+        letter-spacing: 0.48px
+
+
+    button.reg-btn
+        border-radius: 30px
+        font-size: 17px
+        line-height: 20.4px
+        letter-spacing: 0.85px
+        padding: 11.3px 39.67px
+
+
+
+
+    .loader
+      // height: calc( 100vh - 52px )
+      height: 100vh
+      z-index: 10
+      & div.text
+        top: 144px
+        width: 260px
+      & svg.text
+        // width: 63.116%
+        // height: auto
+      & svg.dot-1, svg.dot-2, svg.dot-3
+        bottom: 6%
+      & svg.dot-1
+        right: 5%
+      & svg.dot-2
+        right: 4%
+      & svg.dot-3
+        right: 3%
+      & img.boat
+        left: 32px
+        bottom: 64%
+        width: 170.679px
+        animation: boatMobile 2s infinite
+      & div.container
+            width: 100%
+            height: 320px
+      & img.water
+        position: absolute
+        left: 0
+        bottom: -5%
+
+
+    
+    @keyframes water
+      0%
+        transform: translateX(0)
+      100%
+        transform: translateX(-19.9%)
+
+
+    @keyframes boatMobile
+      0%
+        transform: translateY(0)
+      50%
+        transform: translateY(-8px)
+      100%
+        transform: translateY(0)
+
+
+
+    
+
+      
+
+
+
+
+
+    // Nav //
+
+
+    nav.global
+        padding: 18px 12px
+        align-items: center
+        & a, button
+            display: flex
+        & a.logolink
+            transition: .36s ease
+            & img
+                width: 60.16%
+        & button.burger
+            width: 24.73px
+            height: 12.55px
+            padding: 0
+            position: relative
+            & svg
+                width: 100%
+                & path
+                    transition: .36s ease
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            background-color: white
+            transition: .36s ease
+            transform: translateY(-100%)
+            width: 100%
+            height: 53px
+        & div
+            width: 100%
+            height: 100vh
+            background: white
+            flex-direction: column
+            position: fixed
+            top: 0
+            left: 0
+            align-items: center
+            padding-top: 64px
+            box-sizing: content-box
+            opacity: 0
+            pointer-events: none
+            transition: .36s ease
+            & a
+              color: black !important
+              font-family: 'Playfair Display', serif
+              font-size: 22.42px
+              line-height: 44.5px
+              letter-spacing: .66px
+            & a.current
+                color: #CED3DF !important
+            & svg
+                position: absolute
+            & svg.bg
+                left: 0
+                bottom: 0
+                width: 100vw
+                height: auto
+            & svg.boat
+                bottom: 20%
+                z-index: 1
+        & div.open
+            opacity: 1
+            pointer-events: auto
+        
+    
+    nav.global.on
+        &::after
+            transform: translateY(0)
+
+    button.burger.invert
+        & path
+            stroke: black
+
+
+
+    .logolink, .burger
+        z-index: 10
+
+    
+    .burger
+        position: relative
+        & svg.xbtn
+            position: absolute
+            opacity: 0
+            transition: .36s ease
+            & line
+                stroke: black
+    
+
+
+
+
+
+
+
+    // Header
+
+    .loaded header
+        background-position-y: -4px
+
+
+    header
+        background-image: url('images/mobile/header.jpg')
+        height: calc( 100vh - 51px )
+        padding-top: 88px
+        padding-bottom: 20px
+        background-size: cover
+        & a
+            margin-top: 18px
+        & a.mobile
+            width: max-content
+            align-self: center
+            display: flex
+            justify-content: center
+            & img
+                width: 68.57%
+
+
+
+
+    // Section
+
+
+
+
+
+    section.about
+        padding-top: 72px
+        padding-bottom: 56px
+        & h2,h3,p, .buttonbox
+            padding-left: 12px
+        & img.mobile
+            width: 100%
+            margin: 18px 0 24px
+        & p
+            margin: 0
+            padding-right: 56px
+        & .buttonbox
+            margin: 24px 0 0
+            width: max-content
+            & button
+                flex-direction: row
+                position: relative
+                padding: 11.3px 25.6px
+                border: 1px solid $red
+                & div
+                    align-items: center
+                    flex-direction: row
+
+
+
+
+
+
+
+    section.offer
+        padding-left: 12px
+        padding-bottom: 56px
+        padding-right: 16px
+        & div.container
+            margin: 16px 0 0
+            & div.wrapper
+                & div.box
+                    flex-direction: row
+                    margin-bottom: 16px
+                    & div.svgbox
+                        width: 155.4px
+                        display: flex
+                        justify-content: center
+                        height: max-content
+                        position: relative
+                        top: 9px
+                        margin-right: 14px
+                    & div:last-child
+                        & h4
+                            margin: 0 0 10px
+                        & p
+                            margin: 0
+                    & p.first-p
+                        width: 89%
+                    & p.second-p
+                        width: 95%
+
+
+
+
+    
+
+    section.rental
+        padding-left: 12px
+        padding-bottom: 148px
+        background-image: url(../projekt/mobile/rental.png)
+        background-position-x: 37%
+        background-position-y: bottom
+        background-repeat: no-repeat
+        & h2
+            margin-bottom: 13.5px
+        & div.flex
+            flex-direction: row
+            align-items: center
+            & h4
+                margin: 0
+            & svg
+                margin-right: 10px
+        & div.right
+            & p
+                width: 66%
+        & button
+            padding: 11.3px 23.42px
+
+
+
+
+
+    section.quality
+        padding-top: 24px
+        padding-bottom: 56px
+        flex-direction: column
+        & h2,h3, p
+            padding-left: 12px
+        & img
+            margin: 24px 0
+            width: 100%
+        & p
+            margin: 0
+
+    
+
+
+
+    section.features
+        & h3
+            margin: 0 0 30px
+            padding-left: 12px
+        & div.wrapper
+            padding-right: 16px
+            padding-left: 12px
+            padding-bottom: 56px
+            & div.flex.column
+                & div.flex
+                    flex-direction: row
+                    margin-bottom: 24px
+                    & div.svgbox
+                        height: max-content
+                        align-self: center
+                        margin-right: 14px
+                        width: 45.26px
+                        justify-content: center
+                        display: flex
+                    & div.column
+                        flex-direction: column
+                        margin: 0
+                    & p
+                        margin: 0
+                    & h5
+                        height: max-content
+                        align-self: center
+                    & h5.excluded
+                        align-self: flex-start
+                & div.flex.last
+                    margin-bottom: 0
+        & div.bottom.mobile
+            background-image: url(images/mobile/follow.jpg)
+            height: 322.31px
+            width: 100%
+            padding: 24px 12px 30px
+            color: white
+            background-size: cover
+            background-position-x: 150%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            background-repeat: no-repeat
+            & button
+                color: white
+                border: 1px solid white
+
+
+
+    section.summary
+        padding: 30px 12px 76px
+        & div.wrapper
+            & div.column
+                align-items: center
+                padding: 60px 0
+                margin-bottom: 12px
+                border: 1px solid #F3F4F7
+                & h4
+                    margin: 32px 0 16px
+                & p
+                    margin: 0
+        & div.bottom
+            text-align: center
+            & div.buttonbox
+                margin-top: 24px
+                & button
+                    width: 100%
+                    padding: 11.3px 0
+                & button.red
+                    margin-bottom: 12px
+
+
+
+    // Footer
+
+
+    footer
+        background-color: black
+        flex-direction: column
+        padding: 24px 12px 12px
+        position: relative
+        align-items: center
+        & div.wrapper
+            flex-direction: column
+            align-self: flex-start
+            width: 100%
+            & nav
+                margin-bottom: 64px
+            & a
+                font-size: 17px
+                line-height: 20.4px
+                letter-spacing: 0.85px
+            & div.mediabox
+                flex-direction: column
+                margin-bottom: 72px
+                & a
+                    align-items: center
+                & a.first
+                    margin-bottom: 24px
+                & img
+                    margin-right: 12px
+                & p
+                    margin: 0
+                    font-size: 16px
+                    line-height: 24px
+            & div.bridge
+                width: 100%
+                justify-content: space-between
+                margin-bottom: 144px
+                & p
+                    color: white
+                    font-size: 12px
+                    line-height: 17px
+                    letter-spacing: 0.6px
+                    font-weight: bold
+                    margin: 0
+                    & span
+                        font-weight: normal
+                & p.last
+                    text-align: right
+            & div.bottom
+                    display: flex
+                    width: 100%
+                    justify-content: space-between
+                    & p, a
+                        color: white
+                        margin: 0
+                        font-size: 12px
+                        line-height: 17px
+                        letter-spacing: 0.6px
+                    & a
+                        display: flex
+                        align-items: center
+                        & p
+                            font-weight: bold
+                            & span
+                                font-weight: 400
+                        & svg
+                            margin-left: 12px 
+        & a.arrow
+            position: absolute
+            bottom: 0
+            & button
+                width: 46px
+                height: 87px
+                position: relative
+                display: flex
+                justify-content: center
+                padding: 0
+                & svg
+                    position: absolute
+                & svg.arrow, svg.line
+                    z-index: 2
+                    top: 25px
+        & svg.boat
+            bottom: 30px
+            left: 0
+            position: absolute
+
+
+
+    // Headerless
+
+
+    body.headerless
+        & nav.global
+            & button
+                & path
+                    stroke: black
+        & nav
+            & a
+                color: white
+        & section
+            & h3
+                font-weight: 400
+
+
+
+    // Pricing
+
+
+
+
+
+    body.prices
+        & nav.global
+            background-color: white
+        & section.prices
+            flex-direction: column
+            padding: 64px 0 0
+            & h2, h3, div.right, div.box, div.bottom
+                padding: 0 12px 0
+            & h2
+                margin-bottom: 32px
+            & .right
+                & div.flex
+                    flex-direction: row
+                    width: 100%
+                    justify-content: space-between
+                    & span.line
+                        width: 73.14%
+            & div.box
+                align-items: center
+                text-align: center
+                margin-top: 24px
+                & p
+                    margin: 0
+                & a
+                    margin-top: 24px
+            & div.bottom
+                background-image: url(../projekt/mobile/offer.png)
+                height: 322.31px
+                width: 100%
+                padding: 24px 12px 30px
+                color: white
+                background-size: cover
+                background-position-x: 150%
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                background-repeat: no-repeat
+                margin-top: 30px
+                & button
+                    color: white
+                    border: 1px solid white
+                & h3
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 1.32px
+                    margin: 0 0 8px
+                & h2
+                    font-size: 22px
+                    line-height: 27px
+                    letter-spacing: 0.66px
+                    margin: 0
+
+
+
+
+
+    body.contact
+        & nav.global
+            background: white
+        & section.contact
+            padding: 64px 12px 60px
+            background-image: url('images/mobile/contact.png')
+            background-size: contain
+            background-repeat: no-repeat
+            & p.bold
+                font-weight: 400
+                font-size: 16px
+                line-height: 27px
+                letter-spacing: 0.48px
+            & div.left
+                & div.flex
+                    flex-direction: row
+                    & svg
+                        position: relative
+                        top: 4px
+                    & p
+                        margin: 0 0 0 16px
+                    
+            & div.right
+                & p.bold
+                    margin: 48px 0 10px
+                & p.bold.last
+                    margin: 40px 0 16px
+                & p.phone
+                    flex-direction: row
+                    font-size: 22px
+                    line-height: 39.32px
+                    align-items: center
+                    margin: 0
+                    & svg 
+                        margin-right: 20px
+                        & path
+                            stroke: $red
+                & a.flex
+                    flex-direction: row
+                    align-items: center
+                    color: black
+                    & svg
+                        margin-right: 16px
+                & img
+                    width: 59.46%
+                    margin-top: 30px

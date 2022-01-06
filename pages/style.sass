@@ -1,0 +1,473 @@
+// Root // 
+
+
+* 
+  box-sizing: border-box
+
+  
+// Colors
+
+$red: rgba(193, 0, 33, 1)
+
+
+
+::-webkit-scrollbar 
+    background: white
+    width: 6px
+
+  
+::-webkit-scrollbar-thumb 
+      background: $red
+
+    
+/* Fonts
+
+@font-face 
+    font-family: 'Lato Semibold'
+    src: url("fonts/Lato-Bold.ttf")
+
+@font-face 
+    font-family: 'Lato Light'
+    src: url("fonts/Lato-Light.ttf")
+
+
+@font-face 
+    font-family: 'Lato'
+    src: url("fonts/Lato-Regular.ttf")
+
+
+
+h1, section h2
+  font-family: 'Playfair Display', serif
+
+section h2
+  font-weight: 800
+
+header h2, h3, h4, p, a, select, button
+  font-family: 'Source Sans Pro', sans-serif
+
+section.rental h4
+  font-weight: 300
+
+section.summary h4
+  font-style: italic
+  font-weight: 600
+
+section p
+  font-weight: 300
+
+h5, section.prices .right p
+  font-family: 'Lato Semibold'
+  text-transform: uppercase
+
+section.contact p.phone
+  font-family: 'Lato Light'
+  font-weight: 200
+
+header h2, h3
+  font-weight: 300
+
+h4
+  font-weight: 600
+
+a
+  cursor: pointer
+  font-weight: bold
+  text-decoration: none
+
+select
+  font-weight: bold
+  cursor: pointer
+
+button
+  font-weight: normal
+  outline: none
+  background-color: transparent
+  border: none
+  cursor: pointer
+
+/* General
+
+html, body
+  margin: 0
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+
+button.reg-btn
+    border-style: solid
+    width: max-content
+    transition: .34s ease
+    
+button.transparent
+    color: black
+    border-color: black
+
+button.red
+    background-color: $red
+    color: white
+    & div
+      width: 20px
+      height: 20px
+      left: -4px
+      bottom: 1px
+      & img
+          top: 25%
+      & img:first-child
+          transform: translateX(-12px)
+
+.flex 
+    display: flex
+
+.column
+    flex-direction: column
+
+.bold
+  font-weight: bold
+
+a.link, a.last, footer a.media p
+  position: relative
+  color: white
+  &::after
+    content: ''
+    position: absolute
+    width: 0
+    height: 2px
+    transition: .34s ease
+    left: 0
+    bottom: -4px
+  &:hover
+    &::after
+      width: 100%
+
+
+
+// Loader
+
+
+.loader
+  width: 100vw
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  background-color: white
+  transition: .36s ease
+  & div
+    position: absolute
+    display: flex
+    justify-content: center
+  & div.container
+    height: max-content
+    align-self: flex-end
+    position: relative
+  & img.boat
+    position: absolute
+    align-self: center
+    animation: boatDesktop 2s infinite
+  & img.water
+    height: max-content
+    align-self: flex-end
+    animation: water 5s infinite
+    animation-timing-function: linear
+
+
+.loader.loaded
+  opacity: 0
+  pointer-events: none
+
+
+
+
+nav
+  & a.link, a.last
+    &::after
+      background-color: white
+
+body.headerless
+  & nav
+    & a
+      &::after
+        background-color: $red
+
+footer
+  & nav a.link,nav a.last
+    &::after
+      background-color: $red
+  & a.media:not(a.last) 
+    &:hover
+      & p
+        &::after
+          width: 100%
+          background-color: $red
+  & a.last
+    & path, span
+      transition: .34s ease
+  & a.last
+    &:hover
+      & path
+        fill: #00ffea
+      & span
+        color: #00ffea
+  & a.arrow
+    & svg
+      transition: .34s ease
+  & a.arrow
+    &:hover
+      .arrow, .line
+        transform: translateY(-5px)
+
+
+
+button.reg-btn.red
+    font-weight: normal
+    
+button.reg-btn
+    border-width: 1px
+    font-weight: 500
+
+
+
+
+// Hovers 
+
+
+@-webkit-keyframes hvr-back-pulse
+    50%
+      background-color: rgba(193, 0, 33, .65)
+    
+  
+@keyframes hvr-back-pulse 
+    50% 
+      background-color: rgba(193, 0, 33, .65)
+    
+  
+  
+@-webkit-keyframes hvr-back-pulse-black 
+    50% 
+      background-color: rgba(0, 0, 0, .65)
+    
+  
+@keyframes hvr-back-pulse-black 
+    50% 
+      background-color: rgba(0, 0, 0, .65)
+    
+  
+
+@-webkit-keyframes hvr-back-pulse-blank 
+    50%
+      opacity: .65
+    
+  
+@keyframes hvr-back-pulse-blank 
+    50% 
+        opacity: .65
+    
+
+a.social
+  &:hover
+    -webkit-animation-name: hvr-back-pulse-blank
+    animation-name: hvr-back-pulse-blank
+    -webkit-animation-duration: 1s
+    animation-duration: 1s
+    -webkit-animation-delay: 0.5s
+    animation-delay: 0.5s
+    -webkit-animation-timing-function: linear
+    animation-timing-function: linear
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+
+  
+a
+  &:hover
+    & button.reg-btn:not(button.red)
+      color: white
+      background-color: black
+      border-color: black
+      -webkit-animation-name: hvr-back-pulse-black
+      animation-name: hvr-back-pulse-black
+      -webkit-animation-duration: 1s
+      animation-duration: 1s
+      -webkit-animation-delay: 0.5s
+      animation-delay: 0.5s
+      -webkit-animation-timing-function: linear
+      animation-timing-function: linear
+      -webkit-animation-iteration-count: infinite
+      animation-iteration-count: infinite
+
+a
+  &:hover
+    & button.reg-btn.red
+      background-color: $red
+      -webkit-animation-name: hvr-back-pulse
+      animation-name: hvr-back-pulse
+      -webkit-animation-duration: 1s
+      animation-duration: 1s
+      -webkit-animation-delay: 0.5s
+      animation-delay: 0.5s
+      -webkit-animation-timing-function: linear
+      animation-timing-function: linear
+      -webkit-animation-iteration-count: infinite
+      animation-iteration-count: infinite
+
+
+button.reg-btn.red
+  &:hover
+      background-color: $red
+      -webkit-animation-name: hvr-back-pulse
+      animation-name: hvr-back-pulse
+      -webkit-animation-duration: 1s
+      animation-duration: 1s
+      -webkit-animation-delay: 0.5s
+      animation-delay: 0.5s
+      -webkit-animation-timing-function: linear
+      animation-timing-function: linear
+      -webkit-animation-iteration-count: infinite
+      animation-iteration-count: infinite
+
+
+// Nav // 
+
+
+nav
+  justify-content: space-between
+  & div
+    align-items: center
+    & div.language
+      border: 1px solid white
+      background-color: transparent
+      display: none
+      & select
+        background-color: transparent
+        color: white
+        outline: none
+        border: none
+
+
+// Header //
+
+header
+  color: white
+  justify-content: space-between
+  background-position: center
+  // background-size: cover
+  transition: 1s ease
+  div.bottom
+    justify-content: space-between
+  & main
+    align-self: center
+    text-align: center
+    align-items: center
+    & button
+      border-color: $red
+  & div.bottom
+    & p:last-child
+      text-align: right
+
+
+
+// Section // 
+
+
+section
+  color: black
+  position: relative
+  & button.videobtn
+    position: relative
+    & div
+        position: relative
+        overflow: hidden
+        & img
+          position: absolute
+          top: 25%
+          transition: .34s ease
+  & button.videobtn
+    &:hover
+      & div
+        & img:first-child
+          transform: translateX(0)
+  & .nav-area
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 1px
+
+
+
+nav.global
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  transition: .36s ease
+  justify-content: space-between
+  z-index: 5
+  & div
+    align-items: center
+  
+
+nav.global.on
+  transform: translateY(0)
+        
+    
+// Videobox
+
+.video
+    width: 100%
+    height: 100vh
+    background-color: rgba(0,0,0,0.5)
+    transform: translateY(-100vh)
+    position: fixed
+    z-index: 6
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    transition: .9s ease
+    & div
+      flex-direction: row-reverse
+    & iframe
+      height: 70vh
+      width: 70vw
+    & button
+      align-self: flex-start
+
+.video.on
+  transform: translateY(0)
+
+          
+
+
+div.bridge
+  & div:last-child p
+    text-align: right
+
+
+.headerless
+  & nav
+    z-index: 5
+    & a
+      color: black
+
+
+section.prices
+  & div.right
+    & div
+      position: relative
+      justify-content: space-between
+      & span.line
+        display: inline-block
+        height: 1px
+        background-color: black
+        position: absolute
+        bottom: 40%
+        left: 0
+        right: 3.5%
+        margin: auto
+        opacity: .1
+      & p.red
+        color: $red
